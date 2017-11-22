@@ -1,3 +1,18 @@
 .block-commerce-cart {
   float: right;
 }
+
+.cart-block--link__expand {
+  margin-top: 20px;
+}
+.cart-block--summary__icon {
+  float: right;
+  margin-left: 10px;
+  img {
+    padding: 5px;
+    background-color: $color-primary;
+  }
+}
+.cart-block--summary__count {
+  float: left;
+}
