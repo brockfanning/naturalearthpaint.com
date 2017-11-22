@@ -1,0 +1,22 @@
+---
+# Deploy from the project's Git repository.
+drupal_deploy: true
+drupal_deploy_repo: "git@github.com:brockfanning/naturalearthpaint.com.git"
+drupal_deploy_dir: /var/www/drupal
+drupal_deploy_accept_hostkey: yes
+
+# Set the domain for this site appropriately.
+drupal_domain: "brocktesting.org"
+vagrant_hostname: "{{ drupal_domain }}"
+
+# Only add the production docroot virtualhost.
+apache_vhosts:
+  - servername: "{{ drupal_domain }}"
+    documentroot: "{{ drupal_core_path }}"
+    extra_parameters: "{{ apache_vhost_php_fpm_parameters }}"
+
+# Varnish is not working, disable for now.
+installed_extras:
+  - drush
+  - solr
+apache_listen_port: "80"
