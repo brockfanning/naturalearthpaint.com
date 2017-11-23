@@ -3690,17 +3690,24 @@ input[type=search] {
     transition: all 0.2s ease-in-out; }
 
 .block-commerce-cart {
-  float: right; }
-
-.cart-block--link__expand {
-  margin-top: 20px; }
-
-.cart-block--summary__icon {
-  float: right;
-  margin-left: 10px; }
-  .cart-block--summary__icon img {
-    padding: 5px;
-    background-color: #ac4c22; }
-
-.cart-block--summary__count {
   float: left; }
+  .block-commerce-cart .cart-block--link__expand {
+    text-decoration: none; }
+  .block-commerce-cart .cart-block--summary__icon {
+    margin-right: 10px; }
+    .block-commerce-cart .cart-block--summary__icon img {
+      padding: 4px 10px;
+      background-color: #ac4c22; }
+  .block-commerce-cart .cart-block--summary__count {
+    color: #5b616b;
+    font-size: 1.5rem; }
+  @media screen and (min-width: 600px) {
+    .block-commerce-cart {
+      float: right; }
+      .block-commerce-cart .cart-block--summary__icon {
+        margin-left: 10px;
+        margin-right: 0px;
+        float: right; }
+      .block-commerce-cart .cart-block--summary__count {
+        float: left;
+        margin-top: 10px; } }
