@@ -1,0 +1,10 @@
+uuid: 0d0a47ae-9ac3-42fa-8aeb-05f516508e12
+langcode: en
+status: true
+dependencies: {  }
+id: paint_pigments
+label: 'Earth Pigments'
+description: ''
+variationType: paint_pigments
+injectVariationFields: true
+traits: {  }

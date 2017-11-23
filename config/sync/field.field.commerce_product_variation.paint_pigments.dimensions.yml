@@ -1,0 +1,21 @@
+uuid: 79f60082-7d9b-417d-88f6-341e73ce358d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.paint_pigments
+    - field.storage.commerce_product_variation.dimensions
+  module:
+    - physical
+id: commerce_product_variation.paint_pigments.dimensions
+field_name: dimensions
+entity_type: commerce_product_variation
+bundle: paint_pigments
+label: Dimensions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: physical_dimensions

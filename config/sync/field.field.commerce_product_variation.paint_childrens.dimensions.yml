@@ -1,0 +1,21 @@
+uuid: 4ec620ce-c06d-4df1-a3f9-5cf333c1d045
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.paint_childrens
+    - field.storage.commerce_product_variation.dimensions
+  module:
+    - physical
+id: commerce_product_variation.paint_childrens.dimensions
+field_name: dimensions
+entity_type: commerce_product_variation
+bundle: paint_childrens
+label: Dimensions
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings: {  }
+field_type: physical_dimensions

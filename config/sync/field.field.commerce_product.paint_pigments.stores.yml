@@ -1,0 +1,21 @@
+uuid: 23ce1673-a8a3-44bb-aa5d-8cee1e59f0e2
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_pigments
+    - field.storage.commerce_product.stores
+id: commerce_product.paint_pigments.stores
+field_name: stores
+entity_type: commerce_product
+bundle: paint_pigments
+label: Stores
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_store'
+  handler_settings: {  }
+field_type: entity_reference

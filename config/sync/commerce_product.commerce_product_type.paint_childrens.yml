@@ -1,0 +1,10 @@
+uuid: ef9987c4-d432-40e0-a764-3fdadf99a096
+langcode: en
+status: true
+dependencies: {  }
+id: paint_childrens
+label: 'Children''s Earth Paint'
+description: ''
+variationType: paint_childrens
+injectVariationFields: true
+traits: {  }

@@ -1,0 +1,11 @@
+uuid: 687fef35-fe45-44bd-9224-de9b27c3e2bc
+langcode: en
+status: true
+dependencies: {  }
+id: paint_pigments
+label: 'Earth Pigments'
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_dimensions
+  - purchasable_entity_shippable

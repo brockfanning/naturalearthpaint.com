@@ -1,0 +1,22 @@
+uuid: f7c59572-466c-4a88-89e0-7dc81def6d66
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_childrens
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.paint_childrens.body
+field_name: body
+entity_type: commerce_product
+bundle: paint_childrens
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

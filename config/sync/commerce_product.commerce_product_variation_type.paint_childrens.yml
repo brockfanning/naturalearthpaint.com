@@ -1,0 +1,11 @@
+uuid: 975cac13-cf0e-4d2b-9109-e7fff50ccd56
+langcode: en
+status: true
+dependencies: {  }
+id: paint_childrens
+label: 'Children''s Earth Paint'
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_dimensions
+  - purchasable_entity_shippable

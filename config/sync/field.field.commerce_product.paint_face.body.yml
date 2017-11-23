@@ -1,0 +1,22 @@
+uuid: bec90de5-b907-42de-8b47-b38441ba25b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_face
+    - field.storage.commerce_product.body
+  module:
+    - text
+id: commerce_product.paint_face.body
+field_name: body
+entity_type: commerce_product
+bundle: paint_face
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  display_summary: false
+field_type: text_with_summary

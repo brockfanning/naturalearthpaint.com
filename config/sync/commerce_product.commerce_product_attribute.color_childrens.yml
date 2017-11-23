@@ -1,0 +1,7 @@
+uuid: 59cad5be-c2e3-4ec7-9175-5cd65fef3d16
+langcode: en
+status: true
+dependencies: {  }
+id: color_childrens
+label: 'Color (Childrens)'
+elementType: radios

@@ -1,0 +1,7 @@
+uuid: 74176868-528d-4988-919b-f246dd833303
+langcode: en
+status: true
+dependencies: {  }
+id: color_face
+label: 'Color (Face)'
+elementType: radios

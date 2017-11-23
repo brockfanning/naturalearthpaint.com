@@ -1,0 +1,24 @@
+uuid: fc336b39-c844-4cab-87f6-3ce7f8bee5ca
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - uswds
+_core:
+  default_config_hash: UQ9l8BkgFPcF7r-8VwsTIxC1bOMlI0iQLrJUS95c1E8
+id: uswds_shopping_cart
+theme: uswds
+region: header
+weight: null
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: true
+  item_text: items
+visibility: {  }

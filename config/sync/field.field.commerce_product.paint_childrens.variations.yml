@@ -1,0 +1,24 @@
+uuid: b377f2f9-0666-45e6-b471-dd5db11c57ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_childrens
+    - commerce_product.commerce_product_variation_type.paint_childrens
+    - field.storage.commerce_product.variations
+id: commerce_product.paint_childrens.variations
+field_name: variations
+entity_type: commerce_product
+bundle: paint_childrens
+label: Variations
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: null
+settings:
+  handler: 'default:commerce_product_variation'
+  handler_settings:
+    target_bundles:
+      - paint_childrens
+field_type: entity_reference

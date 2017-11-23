@@ -1,0 +1,28 @@
+uuid: 7cbdd6b0-41d2-4ae0-bd7e-0e4d7dbec5e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_checkout
+    - system
+  theme:
+    - uswds
+_core:
+  default_config_hash: OawPvVMFMZhrfbLL6TEVWKRLl-SVdAKUW56fyMKavT4
+id: uswds_checkout_progress
+theme: uswds
+region: content
+weight: -7
+provider: null
+plugin: commerce_checkout_progress
+settings:
+  id: commerce_checkout_progress
+  label: 'Checkout progress'
+  provider: commerce_checkout
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '/checkout/*'
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,7 @@
+uuid: b916ed50-ce5b-4bc6-968b-4acb562df6d5
+langcode: en
+status: true
+dependencies: {  }
+id: color_pigments
+label: 'Color (Pigments)'
+elementType: radios

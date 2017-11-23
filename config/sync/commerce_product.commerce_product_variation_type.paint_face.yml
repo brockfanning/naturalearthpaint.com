@@ -1,0 +1,11 @@
+uuid: cffe348a-10f2-4137-b642-41039bebd79f
+langcode: en
+status: true
+dependencies: {  }
+id: paint_face
+label: 'Natural Face Paint'
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_dimensions
+  - purchasable_entity_shippable

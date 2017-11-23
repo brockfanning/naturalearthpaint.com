@@ -1,0 +1,20 @@
+uuid: 26f2f677-1732-4787-ae8d-3f192f8a1e49
+langcode: en
+status: true
+dependencies:
+  theme:
+    - nepstandards
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: nepstandards_page_title
+theme: nepstandards
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

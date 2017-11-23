@@ -1,0 +1,14 @@
+uuid: 87492b06-75c6-4473-9a6f-cc8b70d1c3d8
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - brockfanning@gmail.com
+reply: ''
+weight: 0
+message: null
+redirect: null

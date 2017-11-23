@@ -1,0 +1,10 @@
+uuid: 824ebe89-d0c5-405b-ae0b-4d28fe0a1de3
+langcode: en
+status: true
+dependencies: {  }
+id: paint_face
+label: 'Natural Face Paint'
+description: ''
+variationType: paint_face
+injectVariationFields: true
+traits: {  }

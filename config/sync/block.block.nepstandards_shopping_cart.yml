@@ -1,0 +1,24 @@
+uuid: b493488c-5415-4b9e-aed2-3a7241dc7a3f
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_cart
+  theme:
+    - nepstandards
+_core:
+  default_config_hash: UQ9l8BkgFPcF7r-8VwsTIxC1bOMlI0iQLrJUS95c1E8
+id: nepstandards_shopping_cart
+theme: nepstandards
+region: header
+weight: -6
+provider: null
+plugin: commerce_cart
+settings:
+  id: commerce_cart
+  label: 'Shopping Cart'
+  provider: commerce_cart
+  label_display: '0'
+  dropdown: false
+  item_text: items
+visibility: {  }

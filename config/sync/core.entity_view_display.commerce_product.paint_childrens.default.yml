@@ -1,0 +1,36 @@
+uuid: 24df055a-0dda-44cb-b56c-e127d0a41b4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_childrens
+    - field.field.commerce_product.paint_childrens.body
+    - field.field.commerce_product.paint_childrens.stores
+    - field.field.commerce_product.paint_childrens.variations
+  module:
+    - commerce_product
+    - text
+id: commerce_product.paint_childrens.default
+targetEntityType: commerce_product
+bundle: paint_childrens
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: hidden
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true

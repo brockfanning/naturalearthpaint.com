@@ -1,0 +1,36 @@
+uuid: 6cadda21-7cf8-41eb-9b96-af616b5c3703
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.paint_face
+    - field.field.commerce_product.paint_face.body
+    - field.field.commerce_product.paint_face.stores
+    - field.field.commerce_product.paint_face.variations
+  module:
+    - commerce_product
+    - text
+id: commerce_product.paint_face.default
+targetEntityType: commerce_product
+bundle: paint_face
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: -4
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  variations:
+    type: commerce_add_to_cart
+    weight: 10
+    label: above
+    settings:
+      combine: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  stores: true
+  uid: true
