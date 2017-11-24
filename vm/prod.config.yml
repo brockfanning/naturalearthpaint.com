@@ -6,7 +6,7 @@ drupal_deploy_dir: /var/www/drupal
 drupal_deploy_accept_hostkey: yes
 
 # Set the domain for this site appropriately.
-drupal_domain: "brocktesting.org"
+drupal_domain: "brocktest.com"
 vagrant_hostname: "{{ drupal_domain }}"
 
 # Only add the production docroot virtualhost.
