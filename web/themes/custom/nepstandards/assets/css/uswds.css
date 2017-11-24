@@ -3692,7 +3692,8 @@ input[type=search] {
 .block-commerce-cart {
   float: left; }
   .block-commerce-cart .cart-block--link__expand {
-    text-decoration: none; }
+    text-decoration: none;
+    display: inline-block; }
   .block-commerce-cart .cart-block--summary__icon {
     margin-right: 10px; }
     .block-commerce-cart .cart-block--summary__icon img {
