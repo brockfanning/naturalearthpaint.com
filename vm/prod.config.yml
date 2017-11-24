@@ -1,7 +1,7 @@
 ---
 # Deploy from the project's Git repository.
 drupal_deploy: true
-drupal_deploy_repo: "git@github.com:brockfanning/naturalearthpaint.com.git"
+drupal_deploy_repo: "https://github.com/brockfanning/naturalearthpaint.com.git"
 drupal_deploy_dir: /var/www/drupal
 drupal_deploy_accept_hostkey: yes
 
