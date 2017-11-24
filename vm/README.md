@@ -20,14 +20,16 @@ drupal_account_pass: add-your-secure-password-1-here
 drupal_db_password: add-your-secure-password-2-here mysql_root_password: add-your-secure-password-3-here
 ```
 
-Finally go back to the root of the repository and run some commands:
+Next go back to the root of the repository and run some commands:
 
 ```
 ansible-playbook -i vm/inventory vendor/geerlingguy/drupal-vm/examples/prod/bootstrap/init.yml -e "ansible_ssh_user=root"
 DRUPALVM_ENV=prod ansible-playbook -i vm/inventory vendor/geerlingguy/drupal-vm/provisioning/playbook.yml -e "config_dir=$(pwd)/vm" --become --ask-become-pass --ask-vault-pass
 ```
 
-## Updating production server
+Next, visit the site in a browser and install Drupal.
+
+## Updating configuration on production server
 
 This does the following (among other things):
 
