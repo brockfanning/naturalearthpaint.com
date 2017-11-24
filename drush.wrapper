@@ -3,4 +3,4 @@
 # DRUSH WRAPPER
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 cd "`dirname $0`"
-./bin/drush.launcher --local --alias-path=${DIR}/drush/site-aliases "$@"
+./bin/drush.launcher --root=web --local --alias-path=${DIR}/drush/site-aliases "$@"
