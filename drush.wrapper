@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# DRUSH WRAPPER
+DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+cd "`dirname $0`"
+./bin/drush.launcher --local --alias-path=${DIR}/drush/site-aliases "$@"
