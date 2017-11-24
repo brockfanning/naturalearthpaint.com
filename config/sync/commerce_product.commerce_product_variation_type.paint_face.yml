@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: paint_face
-label: 'Natural Face Paint'
+label: 'Paint (Face)'
 orderItemType: default
 generateTitle: true
 traits:

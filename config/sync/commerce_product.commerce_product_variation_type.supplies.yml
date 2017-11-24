@@ -1,9 +1,0 @@
-uuid: 4f9ef17e-1891-411f-820f-447adf342f28
-langcode: en
-status: true
-dependencies: {  }
-id: supplies
-label: Supplies
-orderItemType: default
-generateTitle: true
-traits: {  }

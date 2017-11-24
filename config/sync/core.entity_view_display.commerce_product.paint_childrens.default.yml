@@ -5,10 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.paint_childrens
     - field.field.commerce_product.paint_childrens.body
+    - field.field.commerce_product.paint_childrens.field_image
     - field.field.commerce_product.paint_childrens.stores
     - field.field.commerce_product.paint_childrens.variations
+    - responsive_image.styles.narrow
   module:
     - commerce_product
+    - responsive_image
     - text
 id: commerce_product.paint_childrens.default
 targetEntityType: commerce_product
@@ -21,6 +24,15 @@ content:
     weight: -4
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 11
+    label: hidden
+    settings:
+      responsive_image_style: narrow
+      image_link: ''
+    third_party_settings: {  }
+    type: responsive_image
     region: content
   variations:
     type: commerce_add_to_cart

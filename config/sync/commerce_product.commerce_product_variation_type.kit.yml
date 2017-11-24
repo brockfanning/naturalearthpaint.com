@@ -1,9 +1,0 @@
-uuid: 1f01b342-fcc7-49f3-a3f5-7dac7bffb4ee
-langcode: en
-status: true
-dependencies: {  }
-id: kit
-label: Kit
-orderItemType: default
-generateTitle: true
-traits: {  }

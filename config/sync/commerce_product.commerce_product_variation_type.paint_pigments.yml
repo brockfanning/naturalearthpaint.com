@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: paint_pigments
-label: 'Earth Pigments'
+label: 'Paint (Pigments)'
 orderItemType: default
 generateTitle: true
 traits:
