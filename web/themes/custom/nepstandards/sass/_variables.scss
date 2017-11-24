@@ -1,4 +1,4 @@
 // Put any variable overrides here. For example:
 $color-primary: #ac4c22;
-// $color-primary-darker: #444;
-// $color-primary-darkest: #222;
+$color-primary-darker: darken($color-primary, 15%);
+$color-primary-darkest: darken($color-primary, 30%);

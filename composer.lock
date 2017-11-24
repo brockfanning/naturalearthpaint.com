@@ -6098,69 +6098,6 @@
             "time": "2015-06-14 21:17:01"
         },
         {
-            "name": "drupal/commerce_variation_add_to_cart",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/commerce_variation_add_to_cart",
-                "reference": "8.x-1.02"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_variation_add_to_cart-8.x-1.02.zip",
-                "reference": "8.x-1.02",
-                "shasum": "a3e5923b63d2d4781a63fe3b88bb0644a3dbe62c"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.02",
-                    "datestamp": "1496508542",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Goran Nikolovski",
-                    "homepage": "http://gorannikolovski.com",
-                    "email": "nikolovski84@gmail.com",
-                    "role": "Developer"
-                },
-                {
-                    "name": "andor.koza",
-                    "homepage": "https://www.drupal.org/user/248666"
-                },
-                {
-                    "name": "bojan_m",
-                    "homepage": "https://www.drupal.org/user/2936613"
-                },
-                {
-                    "name": "gnikolovski",
-                    "homepage": "https://www.drupal.org/user/3451979"
-                }
-            ],
-            "description": "Provides separate Add to cart button for each product variation.",
-            "homepage": "https://www.drupal.org/project/commerce_variation_add_to_cart",
-            "support": {
-                "source": "http://cgit.drupalcode.org/commerce_variation_add_to_cart",
-                "issues": "https://www.drupal.org/project/issues/commerce_variation_add_to_cart",
-                "email": "nikolovski84@gmail.com"
-            }
-        },
-        {
             "name": "fabpot/goutte",
             "version": "v3.2.2",
             "source": {
