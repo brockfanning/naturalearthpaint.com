@@ -42,6 +42,7 @@
         "drupal/swiftmailer": "~1.0",
         "drupal/token": "~1.0",
         "drupal/uswds": "^1.0@beta",
+        "drupal/uswds_paragraphs": "1.x-dev",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush/drush": "8.x-dev",
         "oomphinc/composer-installers-extender": "^1.1",

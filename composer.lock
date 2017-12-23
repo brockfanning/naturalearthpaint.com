@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "333962894a9e3d627b84997237911074",
-    "content-hash": "2f8f0c2e1df5067015591f704b314f8e",
+    "hash": "1bfc6f0b5f206622997fc0102a5c1af5",
+    "content-hash": "5c6349463b121d99e68e048298aa7e7e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2398,6 +2398,79 @@
             }
         },
         {
+            "name": "drupal/paragraphs",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "6efc9d4351d4b21a55e7a6428c78495aaca662ef"
+            },
+            "require": {
+                "drupal/core": "~8",
+                "drupal/entity_reference_revisions": "~1.3"
+            },
+            "require-dev": {
+                "drupal/block_field": "~1.0",
+                "drupal/diff": "~1.0",
+                "drupal/field_group": "~1.0",
+                "drupal/inline_entity_form": "~1.0",
+                "drupal/replicate": "~1.0",
+                "drupal/search_api": "*",
+                "drupal/search_api_db": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1505802867",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
+                {
+                    "name": "Frans",
+                    "homepage": "https://www.drupal.org/user/514222"
+                },
+                {
+                    "name": "Primsi",
+                    "homepage": "https://www.drupal.org/user/282629"
+                },
+                {
+                    "name": "jeroen.b",
+                    "homepage": "https://www.drupal.org/user/1853532"
+                },
+                {
+                    "name": "miro_dietiker",
+                    "homepage": "https://www.drupal.org/user/227761"
+                }
+            ],
+            "description": "Enables the creation of Paragraphs entities.",
+            "homepage": "https://www.drupal.org/project/paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs"
+            }
+        },
+        {
             "name": "drupal/physical",
             "version": "dev-1.x",
             "source": {
@@ -2845,6 +2918,50 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/uswds"
             }
+        },
+        {
+            "name": "drupal/uswds_paragraphs",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/uswds_paragraphs",
+                "reference": "6541d8542970da1b8e2532f50f02ad84eeea570b"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta2+7-dev",
+                    "datestamp": "1502238544",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "brockfanning",
+                    "homepage": "https://www.drupal.org/user/709486"
+                }
+            ],
+            "description": "Paragraph types intended for use with the U.S. Web Design Standards library.",
+            "homepage": "https://www.drupal.org/project/uswds_paragraphs",
+            "support": {
+                "source": "http://cgit.drupalcode.org/uswds_paragraphs",
+                "issues": "https://www.drupal.org/project/issues/uswds_paragraphs?categories=All"
+            },
+            "time": "2017-08-11 01:19:35"
         },
         {
             "name": "drupalcommerce/commerce_base",
@@ -7637,6 +7754,7 @@
         "drupal/commerce_shipping": 20,
         "drupal/physical": 20,
         "drupal/uswds": 10,
+        "drupal/uswds_paragraphs": 20,
         "drupalcommerce/commerce_base": 20,
         "drush/drush": 20,
         "behat/mink": 20
