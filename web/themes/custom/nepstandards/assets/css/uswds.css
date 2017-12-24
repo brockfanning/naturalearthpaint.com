@@ -3731,3 +3731,7 @@ input[type=search] {
 
 .commerce-order-item-add-to-cart-form .form-submit {
   margin-top: 45px; }
+
+.usa-media_block-img {
+  max-width: 50%;
+  height: auto; }
