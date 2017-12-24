@@ -5,10 +5,13 @@ dependencies:
   config:
     - commerce_product.commerce_product_type.paint_face
     - field.field.commerce_product.paint_face.body
+    - field.field.commerce_product.paint_face.field_image
     - field.field.commerce_product.paint_face.stores
     - field.field.commerce_product.paint_face.variations
+    - image.style.thumbnail
   module:
     - commerce
+    - image
     - inline_entity_form
     - path
     - text
@@ -32,6 +35,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image:
+    weight: 91
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   path:
     type: path
     weight: 30
