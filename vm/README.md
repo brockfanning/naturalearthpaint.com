@@ -40,3 +40,9 @@ This does the following (among other things):
 ```
 DRUPALVM_ENV=prod ansible-playbook -i vm/inventory vendor/geerlingguy/drupal-vm/provisioning/playbook.yml -e "config_dir=$(pwd)/vm" --sudo --ask-sudo-pass --ask-vault-pass --tags=drupal
 ```
+
+## Uploading data and files from local to production server
+
+Files: rsync -a web/sites/default/files/ nepvm@brocktest.com:/var/www/drupal/web/sites/default/files
+
+Data: drush sql-sync @nep.local @nep.prod
