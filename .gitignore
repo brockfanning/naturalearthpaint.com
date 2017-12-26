@@ -19,3 +19,4 @@
 
 # Ignore other types of development files.
 /.vagrant
+/.vscode
