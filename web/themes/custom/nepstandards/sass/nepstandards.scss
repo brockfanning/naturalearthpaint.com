@@ -48,19 +48,30 @@
   }
 }
 
-.commerce-order-item-add-to-cart-form {
-  .field--name-quantity {
-    float: left;
-    width: 100px;
-    margin-top: 20px !important;
-    margin-right: 20px;
-    label {
-      margin-top: 0;
-    }
+.field--name-variations {
+
+  > .field__item {
+    clear: both;
+    margin-top: 30px;
   }
 
-  .form-submit {
-    margin-top: 45px;
+  .field--name-title {
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  .field--name-quantity {
+    max-width: 4em;
+    margin-top: 0 !important;
+    float: left;
+    margin-right: 20px;
+    label {
+      margin-top: 0.5em;
+      font-weight: normal;
+    }
+  }
+  .form-actions {
+    padding-top: 0.4em;
   }
 }
 
