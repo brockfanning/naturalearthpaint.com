@@ -33,8 +33,10 @@
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/admin_toolbar": "~1.0",
+        "drupal/ajax_add_to_cart": "1.x-dev",
         "drupal/commerce": "~2.0",
         "drupal/commerce_shipping": "2.x-dev",
+        "drupal/commerce_variation_cart_form": "^1.0",
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
         "drupal/physical": "1.x-dev",
@@ -85,6 +87,12 @@
         ]
     },
     "extra": {
+        "patches": {
+            "drupal/ajax_add_to_cart": {
+                "page jumping bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-page_jumps-2926079-8.patch",
+                "extra param bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-extra_param-2933148-2.patch"
+            }
+        },
         "installer-types": [
             "bower-asset",
             "npm-asset"
