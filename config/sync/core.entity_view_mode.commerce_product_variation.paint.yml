@@ -1,0 +1,10 @@
+uuid: c6763217-c5e6-4826-ad89-97798e4aaaa7
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product_variation.paint
+label: Paint
+targetEntityType: commerce_product_variation
+cache: true
