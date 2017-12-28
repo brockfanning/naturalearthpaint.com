@@ -1,9 +1,10 @@
-uuid: 10da54c5-cc3f-4b84-979d-1ea0b43e3f9e
+uuid: cec8211e-87dd-4eb0-8ce6-bf20cfc3e5af
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_pigments
+    - core.entity_view_mode.commerce_product_variation.cart
     - field.field.commerce_product_variation.paint_pigments.attribute_color_pigments
     - field.field.commerce_product_variation.paint_pigments.dimensions
     - field.field.commerce_product_variation.paint_pigments.weight
@@ -12,11 +13,19 @@ dependencies:
 third_party_settings:
   commerce_variation_cart_form:
     combine: '1'
-id: commerce_product_variation.paint_pigments.default
+id: commerce_product_variation.paint_pigments.cart
 targetEntityType: commerce_product_variation
 bundle: paint_pigments
-mode: default
-content: {  }
+mode: cart
+content:
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
 hidden:
   attribute_color_pigments: true
   commerce_variation_cart_form: true
@@ -24,5 +33,4 @@ hidden:
   price: true
   product_id: true
   sku: true
-  title: true
   weight: true

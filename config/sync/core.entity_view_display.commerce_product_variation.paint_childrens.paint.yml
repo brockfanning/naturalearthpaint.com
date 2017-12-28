@@ -1,23 +1,38 @@
-uuid: ce5f70ab-3bee-4b5c-8f6e-009a02396973
+uuid: 48541104-f198-4a37-b7d4-cbf955fb8328
 langcode: en
 status: true
 dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_childrens
-    - core.entity_view_mode.commerce_product_variation.cart
+    - core.entity_view_mode.commerce_product_variation.paint
     - field.field.commerce_product_variation.paint_childrens.attribute_color_childrens
     - field.field.commerce_product_variation.paint_childrens.dimensions
     - field.field.commerce_product_variation.paint_childrens.weight
   module:
+    - commerce_price
     - commerce_variation_cart_form
 third_party_settings:
   commerce_variation_cart_form:
-    combine: 0
-id: commerce_product_variation.paint_childrens.cart
+    combine: '1'
+id: commerce_product_variation.paint_childrens.paint
 targetEntityType: commerce_product_variation
 bundle: paint_childrens
-mode: cart
+mode: paint
 content:
+  commerce_variation_cart_form:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      strip_trailing_zeroes: false
+      display_currency_code: false
+    third_party_settings: {  }
   title:
     type: string
     weight: 0
@@ -28,9 +43,7 @@ content:
     third_party_settings: {  }
 hidden:
   attribute_color_childrens: true
-  commerce_variation_cart_form: true
   dimensions: true
-  price: true
   product_id: true
   sku: true
   weight: true

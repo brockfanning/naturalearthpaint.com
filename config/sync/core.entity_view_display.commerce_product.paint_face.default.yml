@@ -10,7 +10,6 @@ dependencies:
     - field.field.commerce_product.paint_face.variations
     - responsive_image.styles.narrow
   module:
-    - commerce_product
     - responsive_image
     - text
 id: commerce_product.paint_face.default
@@ -35,11 +34,12 @@ content:
     type: responsive_image
     region: content
   variations:
-    type: commerce_add_to_cart
+    type: entity_reference_entity_view
     weight: 10
     label: hidden
     settings:
-      combine: true
+      view_mode: paint
+      link: false
     third_party_settings: {  }
     region: content
 hidden:

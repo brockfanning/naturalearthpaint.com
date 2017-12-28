@@ -5,6 +5,6 @@ dependencies:
   module:
     - commerce_product
 id: commerce_product_variation.paint
-label: Paint
+label: 'Paint variation list'
 targetEntityType: commerce_product_variation
 cache: true
