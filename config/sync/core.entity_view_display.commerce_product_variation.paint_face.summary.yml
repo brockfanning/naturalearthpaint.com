@@ -1,0 +1,36 @@
+uuid: be04269a-18aa-4148-924a-a60694cfa39c
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.paint_face
+    - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.paint_face.attribute_color_face
+    - field.field.commerce_product_variation.paint_face.dimensions
+    - field.field.commerce_product_variation.paint_face.weight
+  module:
+    - commerce_variation_cart_form
+third_party_settings:
+  commerce_variation_cart_form:
+    combine: 0
+id: commerce_product_variation.paint_face.summary
+targetEntityType: commerce_product_variation
+bundle: paint_face
+mode: summary
+content:
+  title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  attribute_color_face: true
+  commerce_variation_cart_form: true
+  dimensions: true
+  price: true
+  product_id: true
+  sku: true
+  weight: true
