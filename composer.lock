@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "934b2e3efc3fc11bc61490616e1823c1",
-    "content-hash": "e83484c4efb264b6ac9331ec54d089dd",
+    "hash": "84a77562ca7451a66f8b5c7c7e84e9d9",
+    "content-hash": "ad007175878e4324f7abc4bf57ea0420",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2916,55 +2916,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/paragraphs"
             }
-        },
-        {
-            "name": "drupal/pathologic",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/pathologic",
-                "reference": "4f9f3fdcf1e0b224c4d8650e383a769f40abf9bf"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.x-dev",
-                    "datestamp": "1494721384",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                },
-                "patches_applied": {
-                    "internal urls": "https://www.drupal.org/files/issues/internal_url_handling-2418369-15.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "Garrett Albright",
-                    "homepage": "https://www.drupal.org/user/191212"
-                }
-            ],
-            "description": "Helps avoid broken links and incorrect paths in content.",
-            "homepage": "https://www.drupal.org/project/pathologic",
-            "support": {
-                "source": "http://cgit.drupalcode.org/pathologic"
-            },
-            "time": "2017-05-14 00:18:53"
         },
         {
             "name": "drupal/physical",
@@ -8249,7 +8200,6 @@
     "stability-flags": {
         "drupal/ajax_add_to_cart": 20,
         "drupal/commerce_shipping": 20,
-        "drupal/pathologic": 20,
         "drupal/physical": 20,
         "drupal/uswds": 10,
         "drupal/uswds_paragraphs": 20,

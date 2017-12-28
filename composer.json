@@ -41,7 +41,6 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.4",
         "drupal/linkit": "^4.3",
-        "drupal/pathologic": "1.x-dev",
         "drupal/physical": "1.x-dev",
         "drupal/search_api": "~1.0",
         "drupal/swiftmailer": "~1.0",
@@ -94,9 +93,6 @@
             "drupal/ajax_add_to_cart": {
                 "page jumping bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-page_jumps-2926079-8.patch",
                 "extra param bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-extra_param-2933148-2.patch"
-            },
-            "drupal/pathologic": {
-                "internal urls": "https://www.drupal.org/files/issues/internal_url_handling-2418369-15.patch"
             }
         },
         "installer-types": [
