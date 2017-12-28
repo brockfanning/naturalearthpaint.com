@@ -91,7 +91,7 @@
     "extra": {
         "patches": {
             "drupal/ajax_add_to_cart": {
-                "page jumping bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-page_jumps-2926079-8.patch",
+                "ajax issues": "https://www.drupal.org/files/issues/ajax_add_to_cart-292609-and-2933377.patch",
                 "extra param bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-extra_param-2933148-2.patch"
             }
         },
