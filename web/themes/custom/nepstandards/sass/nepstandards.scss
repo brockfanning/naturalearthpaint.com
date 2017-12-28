@@ -48,6 +48,7 @@
   }
 }
 
+/* Styling of the add-to-cart forms on product pages */
 .field--name-variations {
 
   > .field__item {
@@ -75,6 +76,23 @@
   }
 }
 
+/* Styling of the cart form */
+.view-commerce-cart-form {
+  form {
+    max-width: none;
+
+    .order-total-line {
+      text-align: left;
+    }
+  }
+}
+
+/* Styling of checkout forms */
+.commerce-checkout-flow {
+  max-width: none;
+}
+
+/* Styling of the USWDS media blocks (graphic lists) */
 .usa-media_block-img {
   max-width: 50%;
   height: auto;

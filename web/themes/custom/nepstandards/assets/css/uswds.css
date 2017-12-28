@@ -3721,6 +3721,7 @@ input[type=search] {
   .ajax-progress-throbber .message {
     display: none; }
 
+/* Styling of the add-to-cart forms on product pages */
 .field--name-variations > .field__item {
   clear: both;
   margin-top: 30px; }
@@ -3742,6 +3743,17 @@ input[type=search] {
 .field--name-variations .form-actions {
   padding-top: 0.4em; }
 
+/* Styling of the cart form */
+.view-commerce-cart-form form {
+  max-width: none; }
+  .view-commerce-cart-form form .order-total-line {
+    text-align: left; }
+
+/* Styling of checkout forms */
+.commerce-checkout-flow {
+  max-width: none; }
+
+/* Styling of the USWDS media blocks (graphic lists) */
 .usa-media_block-img {
   max-width: 50%;
   height: auto; }
