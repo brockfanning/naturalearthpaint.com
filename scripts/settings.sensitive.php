@@ -8,7 +8,7 @@
  */
 
 // API info for Braintree integration.
-$conf['commerce_payment.commerce_payment_gateway.braintree']['configuration']['merchant_id'] = 'REPLACEME';
-$conf['commerce_payment.commerce_payment_gateway.braintree']['configuration']['public_key'] = 'REPLACEME';
-$conf['commerce_payment.commerce_payment_gateway.braintree']['configuration']['private_key'] = 'REPLACEME';
-$conf['commerce_payment.commerce_payment_gateway.braintree']['configuration']['merchant_account_id']['USD'] = 'REPLACEME';
+$config['commerce_payment.commerce_payment_gateway.braintree']['configuration']['merchant_id'] = 'REPLACEME';
+$config['commerce_payment.commerce_payment_gateway.braintree']['configuration']['public_key'] = 'REPLACEME';
+$config['commerce_payment.commerce_payment_gateway.braintree']['configuration']['private_key'] = 'REPLACEME';
+$config['commerce_payment.commerce_payment_gateway.braintree']['configuration']['merchant_account_id']['USD'] = 'REPLACEME';
