@@ -1,0 +1,22 @@
+uuid: 6338791e-05c6-42a9-b618-6c2241dad616
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_braintree
+id: braintree
+label: Braintree
+weight: null
+plugin: braintree_hostedfields
+configuration:
+  merchant_id: dummy
+  public_key: dummy
+  private_key: dummy
+  merchant_account_id:
+    USD: dummy
+  display_label: Braintree
+  mode: test
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND
