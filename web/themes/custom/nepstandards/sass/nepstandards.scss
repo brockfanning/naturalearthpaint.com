@@ -1,3 +1,4 @@
+/* Styling for the top-right shopping cart block. */
 .block-commerce-cart {
   float: left;
 
@@ -35,32 +36,8 @@
   }
 }
 
-.ajax-progress-throbber {
-  float: left;
-  padding: 1px 10px 2px 0px;
-
-  .throbber {
-    padding-right: 7px;
-  }
-
-  .message {
-    display: none;
-  }
-}
-
 /* Styling of the add-to-cart forms on product pages */
 .field--name-variations {
-
-  > .field__item {
-    clear: both;
-    margin-top: 30px;
-  }
-
-  .field--name-title {
-    float: left;
-    margin-right: 20px;
-    font-weight: bold;
-  }
   .field--name-quantity {
     max-width: 4em;
     margin-top: 0 !important;
@@ -73,6 +50,37 @@
   }
   .form-actions {
     padding-top: 0.4em;
+  }
+}
+
+/* Styling of the AJAX throbber that Drupal uses. */
+.ajax-progress-throbber .throbber {
+  padding-right: 7px;
+}
+
+/* Styling of the rendered attributes on some product pages. */
+.product--rendered-attribute__selected ~ label.option {
+  border: none;
+}
+.product--rendered-attribute {
+  .form-item {
+    width: 100px;
+    /* Customize the position of the AJAX throbber. */
+    position: relative;
+    .ajax-progress-throbber {
+      position: absolute;
+      top: -2px;
+      left: 15px;
+      .message {
+        display: none;
+      }
+    }
+  }
+  legend {
+    display: none;
+  }
+  label {
+    margin-top: 0;
   }
 }
 
@@ -96,4 +104,79 @@
 .usa-media_block-img {
   max-width: 50%;
   height: auto;
+}
+
+/* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
+ * Testing this here before creating a pull request on the 18F web-design-standards repo.
+ * TODO: An alternative would be to make sure Drupal (or Commerce?) doesn't add
+ * elements in between the input and the label.
+ */
+[type=checkbox] ~ label,
+[type=radio] ~ label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.65em;
+}
+
+[type=checkbox] ~ label::before,
+[type=radio] ~ label::before {
+  background: $color-white;
+  border-radius: $checkbox-border-radius;
+  box-shadow: 0 0 0 1px $color-gray-medium;
+  content: '\a0';
+  display: inline-block;
+  height: $spacing-medium;
+  line-height: $spacing-medium;
+  margin-right: 0.6em;
+  text-indent: 0.15em;
+  vertical-align: middle\0; // Target IE 11 and below to vertically center inputs
+  width: $spacing-medium;
+}
+
+[type=radio] ~ label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $color-gray-medium;
+  height: 1.4rem; // Size overrides to account for shape + checked styling
+  line-height: 1.4rem;
+  margin-right: 0.75em;
+  width: 1.4rem;
+}
+
+[type=checkbox]:checked ~ label::before,
+[type=radio]:checked ~ label::before {
+  background-color: $color-primary;
+  box-shadow: 0 0 0 1px $color-primary;
+}
+
+[type=radio]:checked ~ label::before {
+  box-shadow: 0 0 0 2px $color-white, 0 0 0 4px $color-primary;
+}
+
+[type=checkbox]:checked ~ label::before,
+[type=checkbox]:checked:disabled ~ label::before {
+  background-image: url('#{$image-path}/correct8.png');
+  background-image: url('#{$image-path}/correct8.svg');
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+[type=radio]:focus ~ label::before {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing * 2; // Double the offset to account for circular shape
+}
+
+[type=checkbox]:disabled ~ label {
+  color: $color-gray-lighter;
+}
+
+[type=checkbox]:focus ~ label::before {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing;
+}
+
+[type=checkbox]:disabled ~ label::before,
+[type=radio]:disabled ~ label::before {
+  background: $color-gray-lightest;
+  box-shadow: 0 0 0 1px $color-gray-light;
+  cursor: not-allowed;
 }

@@ -174,15 +174,15 @@ legend {
   }
 }
 
-[type=checkbox] + label,
-[type=radio] + label {
+[type=checkbox] ~ label,
+[type=radio] ~ label {
   cursor: pointer;
   font-weight: 400;
   margin-bottom: 0.65em;
 }
 
-[type=checkbox] + label::before,
-[type=radio] + label::before {
+[type=checkbox] ~ label::before,
+[type=radio] ~ label::before {
   background: $color-white;
   border-radius: $checkbox-border-radius;
   box-shadow: 0 0 0 1px $color-gray-medium;
@@ -196,7 +196,7 @@ legend {
   width: $spacing-medium;
 }
 
-[type=radio] + label::before {
+[type=radio] ~ label::before {
   border-radius: 100%;
   box-shadow: 0 0 0 2px $color-white, 0 0 0 3px $color-gray-medium;
   height: 1.4rem; // Size overrides to account for shape + checked styling
@@ -205,40 +205,40 @@ legend {
   width: 1.4rem;
 }
 
-[type=checkbox]:checked + label::before,
-[type=radio]:checked + label::before {
+[type=checkbox]:checked ~ label::before,
+[type=radio]:checked ~ label::before {
   background-color: $color-primary;
   box-shadow: 0 0 0 1px $color-primary;
 }
 
-[type=radio]:checked + label::before {
+[type=radio]:checked ~ label::before {
   box-shadow: 0 0 0 2px $color-white, 0 0 0 4px $color-primary;
 }
 
-[type=checkbox]:checked + label::before,
-[type=checkbox]:checked:disabled + label::before {
+[type=checkbox]:checked ~ label::before,
+[type=checkbox]:checked:disabled ~ label::before {
   background-image: url('#{$image-path}/correct8.png');
   background-image: url('#{$image-path}/correct8.svg');
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-[type=radio]:focus + label::before {
+[type=radio]:focus ~ label::before {
   outline: $focus-outline;
   outline-offset: $focus-spacing * 2; // Double the offset to account for circular shape
 }
 
-[type=checkbox]:disabled + label {
+[type=checkbox]:disabled ~ label {
   color: $color-gray-lighter;
 }
 
-[type=checkbox]:focus + label::before {
+[type=checkbox]:focus ~ label::before {
   outline: $focus-outline;
   outline-offset: $focus-spacing;
 }
 
-[type=checkbox]:disabled + label::before,
-[type=radio]:disabled + label::before {
+[type=checkbox]:disabled ~ label::before,
+[type=radio]:disabled ~ label::before {
   background: $color-gray-lightest;
   box-shadow: 0 0 0 1px $color-gray-light;
   cursor: not-allowed;

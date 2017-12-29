@@ -3689,6 +3689,7 @@ input[type=search] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
+/* Styling for the top-right shopping cart block. */
 .block-commerce-cart {
   float: left; }
   .block-commerce-cart .cart-block--link__expand {
@@ -3713,24 +3714,7 @@ input[type=search] {
         float: left;
         margin-top: 10px; } }
 
-.ajax-progress-throbber {
-  float: left;
-  padding: 1px 10px 2px 0px; }
-  .ajax-progress-throbber .throbber {
-    padding-right: 7px; }
-  .ajax-progress-throbber .message {
-    display: none; }
-
 /* Styling of the add-to-cart forms on product pages */
-.field--name-variations > .field__item {
-  clear: both;
-  margin-top: 30px; }
-
-.field--name-variations .field--name-title {
-  float: left;
-  margin-right: 20px;
-  font-weight: bold; }
-
 .field--name-variations .field--name-quantity {
   max-width: 4em;
   margin-top: 0 !important;
@@ -3742,6 +3726,31 @@ input[type=search] {
 
 .field--name-variations .form-actions {
   padding-top: 0.4em; }
+
+/* Styling of the AJAX throbber that Drupal uses. */
+.ajax-progress-throbber .throbber {
+  padding-right: 7px; }
+
+/* Styling of the rendered attributes on some product pages. */
+.product--rendered-attribute__selected ~ label.option {
+  border: none; }
+
+.product--rendered-attribute .form-item {
+  width: 100px;
+  /* Customize the position of the AJAX throbber. */
+  position: relative; }
+  .product--rendered-attribute .form-item .ajax-progress-throbber {
+    position: absolute;
+    top: -2px;
+    left: 15px; }
+    .product--rendered-attribute .form-item .ajax-progress-throbber .message {
+      display: none; }
+
+.product--rendered-attribute legend {
+  display: none; }
+
+.product--rendered-attribute label {
+  margin-top: 0; }
 
 /* Styling of the cart form */
 .view-commerce-cart-form form {
@@ -3757,3 +3766,68 @@ input[type=search] {
 .usa-media_block-img {
   max-width: 50%;
   height: auto; }
+
+/* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
+ * Testing this here before creating a pull request on the 18F web-design-standards repo.
+ * TODO: An alternative would be to make sure Drupal (or Commerce?) doesn't add
+ * elements in between the input and the label.
+ */
+[type=checkbox] ~ label,
+[type=radio] ~ label {
+  cursor: pointer;
+  font-weight: 400;
+  margin-bottom: 0.65em; }
+
+[type=checkbox] ~ label::before,
+[type=radio] ~ label::before {
+  background: #ffffff;
+  border-radius: 2px;
+  box-shadow: 0 0 0 1px #757575;
+  content: '\a0';
+  display: inline-block;
+  height: 2rem;
+  line-height: 2rem;
+  margin-right: 0.6em;
+  text-indent: 0.15em;
+  vertical-align: middle\0;
+  width: 2rem; }
+
+[type=radio] ~ label::before {
+  border-radius: 100%;
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3px #757575;
+  height: 1.4rem;
+  line-height: 1.4rem;
+  margin-right: 0.75em;
+  width: 1.4rem; }
+
+[type=checkbox]:checked ~ label::before,
+[type=radio]:checked ~ label::before {
+  background-color: #ac4c22;
+  box-shadow: 0 0 0 1px #ac4c22; }
+
+[type=radio]:checked ~ label::before {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #ac4c22; }
+
+[type=checkbox]:checked ~ label::before,
+[type=checkbox]:checked:disabled ~ label::before {
+  background-image: url("../img/correct8.png");
+  background-image: url("../img/correct8.svg");
+  background-position: 50%;
+  background-repeat: no-repeat; }
+
+[type=radio]:focus ~ label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 6px; }
+
+[type=checkbox]:disabled ~ label {
+  color: #d6d7d9; }
+
+[type=checkbox]:focus ~ label::before {
+  outline: 2px dotted #aeb0b5;
+  outline-offset: 3px; }
+
+[type=checkbox]:disabled ~ label::before,
+[type=radio]:disabled ~ label::before {
+  background: #f1f1f1;
+  box-shadow: 0 0 0 1px #aeb0b5;
+  cursor: not-allowed; }

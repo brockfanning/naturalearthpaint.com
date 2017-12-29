@@ -19,7 +19,8 @@
  * @ingroup themeable
  */
 #}
-<article{{ attributes }}>
+{% set classes = [ 'product-type--' ~ product_entity.bundle ] %}
+<article{{ attributes.addClass(classes) }}>
   <div class="usa-grid-full">
     <div class="usa-width-two-thirds">
       {{- product|without('variation_attributes','field_image') -}}
