@@ -1,0 +1,22 @@
+uuid: 9a0579d2-b91d-4b57-a226-fad364ea106b
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.color_pigments
+    - field.field.commerce_product_attribute_value.color_pigments.field_color_swatch
+id: commerce_product_attribute_value.color_pigments.default
+targetEntityType: commerce_product_attribute_value
+bundle: color_pigments
+mode: default
+content:
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_color_swatch: true

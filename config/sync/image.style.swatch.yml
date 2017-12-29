@@ -1,0 +1,15 @@
+uuid: 4fe57045-5e7c-4088-b88f-96716c4675b0
+langcode: en
+status: true
+dependencies: {  }
+name: swatch
+label: 'Swatch (75x75)'
+effects:
+  a6312a74-961c-452e-b1dd-9a6885c6d119:
+    uuid: a6312a74-961c-452e-b1dd-9a6885c6d119
+    id: image_scale
+    weight: 1
+    data:
+      width: 75
+      height: 75
+      upscale: false

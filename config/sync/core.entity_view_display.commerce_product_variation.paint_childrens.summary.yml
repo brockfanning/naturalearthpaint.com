@@ -8,11 +8,6 @@ dependencies:
     - field.field.commerce_product_variation.paint_childrens.attribute_color_childrens
     - field.field.commerce_product_variation.paint_childrens.dimensions
     - field.field.commerce_product_variation.paint_childrens.weight
-  module:
-    - commerce_variation_cart_form
-third_party_settings:
-  commerce_variation_cart_form:
-    combine: 0
 id: commerce_product_variation.paint_childrens.summary
 targetEntityType: commerce_product_variation
 bundle: paint_childrens

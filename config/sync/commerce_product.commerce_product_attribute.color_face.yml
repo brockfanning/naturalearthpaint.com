@@ -4,4 +4,4 @@ status: true
 dependencies: {  }
 id: color_face
 label: 'Color (Face)'
-elementType: radios
+elementType: commerce_product_rendered_attribute

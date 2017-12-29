@@ -1,0 +1,32 @@
+uuid: 8d21e76b-1d78-4539-aaab-a7100f2b9b9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.color_pigments
+    - field.field.commerce_product_attribute_value.color_pigments.field_color_swatch
+    - image.style.thumbnail
+  module:
+    - image
+id: commerce_product_attribute_value.color_pigments.default
+targetEntityType: commerce_product_attribute_value
+bundle: color_pigments
+mode: default
+content:
+  field_color_swatch:
+    weight: 3
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -8,11 +8,6 @@ dependencies:
     - field.field.commerce_product_variation.paint_pigments.attribute_color_pigments
     - field.field.commerce_product_variation.paint_pigments.dimensions
     - field.field.commerce_product_variation.paint_pigments.weight
-  module:
-    - commerce_variation_cart_form
-third_party_settings:
-  commerce_variation_cart_form:
-    combine: '1'
 id: commerce_product_variation.paint_pigments.cart
 targetEntityType: commerce_product_variation
 bundle: paint_pigments

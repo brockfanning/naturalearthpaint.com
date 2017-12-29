@@ -1,0 +1,30 @@
+uuid: f5c20847-0125-47bc-85ff-77b3b9915282
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_product
+    - file
+    - image
+id: commerce_product_attribute_value.field_color_swatch
+field_name: field_color_swatch
+entity_type: commerce_product_attribute_value
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
