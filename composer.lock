@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "558843dcef5b16b1b8c1a83e7c4b2466",
-    "content-hash": "fcd25709ebd43de4ac030cf2ac2affbe",
+    "hash": "c3102ee524fdb1946d61e6ada17459f8",
+    "content-hash": "cab32853b770d4b87b29cecf1e30f097",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2515,6 +2515,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "popup functionality": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
