@@ -10,6 +10,7 @@ dependencies:
       - commerce_cart
       - commerce_product
   module:
+    - commerce_order
     - commerce_product
 _core:
   default_config_hash: mD4rM9ce2sZVTF9MO0WMs-YG1V1o8UqyUkJL6EhzSWM
@@ -24,9 +25,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  quantity:
+    type: commerce_quantity
+    weight: 1
+    region: content
+    settings:
+      placeholder: ''
+      step: '1'
+    third_party_settings: {  }
 hidden:
   created: true
-  quantity: true
   status: true
   uid: true
   unit_price: true

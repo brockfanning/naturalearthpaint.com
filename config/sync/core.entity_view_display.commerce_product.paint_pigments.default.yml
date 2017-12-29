@@ -10,7 +10,7 @@ dependencies:
     - field.field.commerce_product.paint_pigments.variations
     - responsive_image.styles.narrow
   module:
-    - commerce_product
+    - dc_ajax_add_cart
     - responsive_image
     - text
 id: commerce_product.paint_pigments.default
@@ -35,7 +35,7 @@ content:
     type: responsive_image
     region: content
   variations:
-    type: commerce_add_to_cart
+    type: dc_ajax_add_cart
     weight: 10
     label: hidden
     settings:
