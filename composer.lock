@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6b463d942d8738c5994f4ba352c4a7b6",
-    "content-hash": "5db8669f4b14f021a4834fa0d26fe64c",
+    "hash": "558843dcef5b16b1b8c1a83e7c4b2466",
+    "content-hash": "fcd25709ebd43de4ac030cf2ac2affbe",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1412,61 +1412,6 @@
             }
         },
         {
-            "name": "drupal/ajax_add_to_cart",
-            "version": "dev-1.x",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/ajax_add_to_cart",
-                "reference": "d62402b87a54d3e9e28b811f2c637836f5cd0d18"
-            },
-            "require": {
-                "drupal/commerce": "~2.0",
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0+2-dev",
-                    "datestamp": "1511164385",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
-                    }
-                },
-                "patches_applied": {
-                    "ajax issues": "https://www.drupal.org/files/issues/ajax_add_to_cart-292609-and-2933377.patch",
-                    "extra param bug": "https://www.drupal.org/files/issues/ajax_add_to_cart-extra_param-2933148-2.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "jeetmail72",
-                    "homepage": "https://www.drupal.org/user/3411867"
-                },
-                {
-                    "name": "pen",
-                    "homepage": "https://www.drupal.org/user/2435634"
-                }
-            ],
-            "description": "Add ajax add to cart functionality.",
-            "homepage": "https://www.drupal.org/project/ajax_add_to_cart",
-            "keywords": [
-                "Drupal"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/ajax_add_to_cart",
-                "issues": "https://www.drupal.org/project/issues/ajax_add_to_cart"
-            },
-            "time": "2017-11-24 09:33:47"
-        },
-        {
             "name": "drupal/commerce",
             "version": "2.1.0",
             "source": {
@@ -1509,7 +1454,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.1",
-                    "datestamp": "1509734284",
+                    "datestamp": "1512585785",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2543,6 +2488,51 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "time": "2017-11-03 13:20:16"
+        },
+        {
+            "name": "drupal/dc_ajax_add_cart",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/dc_ajax_add_cart",
+                "reference": "43e938a71d48850eb5fafdf2370289cc39ec2535"
+            },
+            "require": {
+                "drupal/commerce": "~2.0",
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_product": "*",
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha3+18-dev",
+                    "datestamp": "1511417585",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "subhojit777",
+                    "homepage": "https://www.drupal.org/user/1812492"
+                }
+            ],
+            "description": "Ajax add to cart module. Allows you to add products AJAX-ically to cart.",
+            "homepage": "https://www.drupal.org/project/dc_ajax_add_cart",
+            "support": {
+                "source": "http://cgit.drupalcode.org/dc_ajax_add_cart"
+            },
+            "time": "2017-11-23 06:08:19"
         },
         {
             "name": "drupal/entity",
@@ -8201,8 +8191,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/ajax_add_to_cart": 20,
         "drupal/commerce_shipping": 20,
+        "drupal/dc_ajax_add_cart": 20,
         "drupal/physical": 20,
         "drupal/uswds": 10,
         "drupal/uswds_paragraphs": 20,
