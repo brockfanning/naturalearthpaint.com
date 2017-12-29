@@ -3737,6 +3737,7 @@ input[type=search] {
 
 .product--rendered-attribute .form-item {
   width: 100px;
+  margin-top: 15px;
   vertical-align: top;
   /* Customize the position of the AJAX throbber. */
   position: relative; }
@@ -3752,6 +3753,9 @@ input[type=search] {
 
 .product--rendered-attribute label {
   margin-top: 0; }
+
+.product-type--paint_pigments .product--rendered-attribute .form-item {
+  width: 150px; }
 
 /* Styling of the cart form */
 .view-commerce-cart-form form {

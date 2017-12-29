@@ -65,6 +65,7 @@
 .product--rendered-attribute {
   .form-item {
     width: 100px;
+    margin-top: 15px;
     vertical-align: top;
     /* Customize the position of the AJAX throbber. */
     position: relative;
@@ -82,6 +83,13 @@
   }
   label {
     margin-top: 0;
+  }
+}
+.product-type--paint_pigments {
+  .product--rendered-attribute {
+    .form-item {
+      width: 150px;
+    }
   }
 }
 
