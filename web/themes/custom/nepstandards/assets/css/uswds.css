@@ -3737,6 +3737,7 @@ input[type=search] {
 
 .product--rendered-attribute .form-item {
   width: 100px;
+  vertical-align: top;
   /* Customize the position of the AJAX throbber. */
   position: relative; }
   .product--rendered-attribute .form-item .ajax-progress-throbber {
