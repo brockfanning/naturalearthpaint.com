@@ -45,4 +45,4 @@ DRUPALVM_ENV=prod ansible-playbook -i vm/inventory vendor/geerlingguy/drupal-vm/
 
 Files: rsync -a web/sites/default/files/ nepvm@brocktest.com:/var/www/drupal/web/sites/default/files
 
-Data: drush sql-sync @nep.local @nep.prod
+Data: drush use; drush sql-sync @nep.local @nep.prod
