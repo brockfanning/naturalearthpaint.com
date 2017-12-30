@@ -92,6 +92,10 @@
         "patches": {
             "drupal/dc_ajax_add_cart": {
                 "popup functionality": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744.patch"
+            },
+            "drupal/uswds": {
+                "registry alter typo": "https://www.drupal.org/files/issues/uswds-d8-typo-in-theme-registry-alter-2933566-2.patch",
+                "search form id": "https://www.drupal.org/files/issues/uswds-d8-specify-search-button-id-2933573-2.patch"
             }
         },
         "installer-types": [
