@@ -81,11 +81,15 @@
   label {
     margin-top: 0;
     padding: 8px;
+    border: 1px solid transparent;
 
     &:before {
       display: none !important;
     }
   }
+}
+.product--rendered-attribute__selected ~ label.option {
+  border-color: $color-black;
 }
 .product-type--paint_pigments {
   .product--rendered-attribute {

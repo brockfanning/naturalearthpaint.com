@@ -3750,9 +3750,13 @@ input[type=search] {
 
 .product--rendered-attribute label {
   margin-top: 0;
-  padding: 8px; }
+  padding: 8px;
+  border: 1px solid transparent; }
   .product--rendered-attribute label:before {
     display: none !important; }
+
+.product--rendered-attribute__selected ~ label.option {
+  border-color: #000000; }
 
 .product-type--paint_pigments .product--rendered-attribute .form-item {
   width: 150px; }
