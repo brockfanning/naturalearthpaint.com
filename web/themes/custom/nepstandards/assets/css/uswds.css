@@ -3732,9 +3732,6 @@ input[type=search] {
   padding-right: 7px; }
 
 /* Styling of the rendered attributes on some product pages. */
-.product--rendered-attribute__selected ~ label.option {
-  border: none; }
-
 .product--rendered-attribute .form-item {
   width: 100px;
   margin-top: 15px;
@@ -3743,8 +3740,8 @@ input[type=search] {
   position: relative; }
   .product--rendered-attribute .form-item .ajax-progress-throbber {
     position: absolute;
-    top: -2px;
-    left: 15px; }
+    top: 30%;
+    left: 30%; }
     .product--rendered-attribute .form-item .ajax-progress-throbber .message {
       display: none; }
 
@@ -3752,7 +3749,10 @@ input[type=search] {
   display: none; }
 
 .product--rendered-attribute label {
-  margin-top: 0; }
+  margin-top: 0;
+  padding: 8px; }
+  .product--rendered-attribute label:before {
+    display: none !important; }
 
 .product-type--paint_pigments .product--rendered-attribute .form-item {
   width: 150px; }
