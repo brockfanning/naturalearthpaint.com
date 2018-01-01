@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_face
     - field.field.commerce_product_variation.paint_face.attribute_color_face
+    - field.field.commerce_product_variation.paint_face.attribute_size
     - field.field.commerce_product_variation.paint_face.dimensions
     - field.field.commerce_product_variation.paint_face.weight
   module:
@@ -18,6 +19,12 @@ content:
   attribute_color_face:
     type: options_select
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    type: options_select
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content

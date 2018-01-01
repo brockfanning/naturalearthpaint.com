@@ -1,0 +1,16 @@
+uuid: fbc13d1a-c9b4-41ad-9bdf-7daabe395cc6
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_cart
+      - commerce_product
+  module:
+    - commerce_product
+_core:
+  default_config_hash: O4t3GPTqzyT3PaJNpYKGDe4X9TPlKdkH3Im-ml0h3Sg
+id: commerce_product_variation.dc_ajax_add_cart_popup
+label: 'Ajax Add to Cart Popup'
+targetEntityType: commerce_product_variation
+cache: true

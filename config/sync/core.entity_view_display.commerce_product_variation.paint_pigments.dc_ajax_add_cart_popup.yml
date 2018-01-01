@@ -1,19 +1,19 @@
-uuid: 5d22db02-5e30-4747-9286-b6b8c2be6900
+uuid: 9d1cb260-c121-4a2c-80aa-415616875d98
 langcode: en
 status: true
 dependencies:
   config:
-    - commerce_product.commerce_product_variation_type.paint_face
-    - field.field.commerce_product_variation.paint_face.attribute_color_face
-    - field.field.commerce_product_variation.paint_face.attribute_size
-    - field.field.commerce_product_variation.paint_face.dimensions
-    - field.field.commerce_product_variation.paint_face.weight
+    - commerce_product.commerce_product_variation_type.paint_pigments
+    - core.entity_view_mode.commerce_product_variation.dc_ajax_add_cart_popup
+    - field.field.commerce_product_variation.paint_pigments.attribute_color_pigments
+    - field.field.commerce_product_variation.paint_pigments.dimensions
+    - field.field.commerce_product_variation.paint_pigments.weight
   module:
     - commerce_price
-id: commerce_product_variation.paint_face.default
+id: commerce_product_variation.paint_pigments.dc_ajax_add_cart_popup
 targetEntityType: commerce_product_variation
-bundle: paint_face
-mode: default
+bundle: paint_pigments
+mode: dc_ajax_add_cart_popup
 content:
   price:
     type: commerce_price_default
@@ -33,8 +33,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
 hidden:
-  attribute_color_face: true
-  attribute_size: true
+  attribute_color_pigments: true
   commerce_variation_cart_form: true
   dimensions: true
   product_id: true

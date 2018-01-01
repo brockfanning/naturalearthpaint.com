@@ -27,6 +27,7 @@ module:
   datetime: 0
   dblog: 0
   dc_ajax_add_cart: 0
+  dc_ajax_add_cart_popup: 0
   dynamic_page_cache: 0
   editor: 0
   entity: 0
