@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_pigments
     - field.field.commerce_product_variation.paint_pigments.attribute_color_pigments
+    - field.field.commerce_product_variation.paint_pigments.attribute_size
     - field.field.commerce_product_variation.paint_pigments.dimensions
     - field.field.commerce_product_variation.paint_pigments.weight
   module:
@@ -18,6 +19,12 @@ content:
   attribute_color_pigments:
     type: options_select
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    type: options_select
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content

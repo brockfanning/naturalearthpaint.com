@@ -1,0 +1,24 @@
+uuid: 45854748-ddb3-4579-a51b-d9fa4b2ef75f
+langcode: en
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.size
+    - commerce_product.commerce_product_variation_type.paint_pigments
+    - field.storage.commerce_product_variation.attribute_size
+id: commerce_product_variation.paint_pigments.attribute_size
+field_name: attribute_size
+entity_type: commerce_product_variation
+bundle: paint_pigments
+label: Size
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - size
+field_type: entity_reference

@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_childrens
     - field.field.commerce_product_variation.paint_childrens.attribute_color_childrens
+    - field.field.commerce_product_variation.paint_childrens.attribute_size
     - field.field.commerce_product_variation.paint_childrens.dimensions
     - field.field.commerce_product_variation.paint_childrens.weight
   module:
@@ -18,6 +19,12 @@ content:
   attribute_color_childrens:
     type: options_select
     weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  attribute_size:
+    type: options_select
+    weight: 3
     settings: {  }
     third_party_settings: {  }
     region: content
