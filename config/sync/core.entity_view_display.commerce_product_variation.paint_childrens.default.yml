@@ -5,6 +5,7 @@ dependencies:
   config:
     - commerce_product.commerce_product_variation_type.paint_childrens
     - field.field.commerce_product_variation.paint_childrens.attribute_color_childrens
+    - field.field.commerce_product_variation.paint_childrens.attribute_size
     - field.field.commerce_product_variation.paint_childrens.dimensions
     - field.field.commerce_product_variation.paint_childrens.weight
   module:
@@ -33,6 +34,7 @@ content:
     third_party_settings: {  }
 hidden:
   attribute_color_childrens: true
+  attribute_size: true
   commerce_variation_cart_form: true
   dimensions: true
   product_id: true
