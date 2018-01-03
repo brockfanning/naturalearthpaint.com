@@ -58,6 +58,11 @@
   padding-right: 7px;
 }
 
+/* Styling of the product variation info that gets replaced by AJAX. */
+.product--variation--selected-info {
+  background-image: none;
+}
+
 /* Styling of the rendered attributes on some product pages. */
 .product--rendered-attribute {
   .form-item {
@@ -74,9 +79,6 @@
         display: none;
       }
     }
-  }
-  legend {
-    display: none;
   }
   label {
     margin-top: 0;
@@ -95,6 +97,21 @@
   .product--rendered-attribute {
     .form-item {
       width: 150px;
+    }
+  }
+}
+
+/* Styling of the "Size" attribute on product pages */
+.form-item-purchased-entity-0-attributes-attribute-size {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+  .ajax-progress-throbber {
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    .message {
+      display: none;
     }
   }
 }

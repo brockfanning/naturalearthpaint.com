@@ -23,7 +23,11 @@
 <article{{ attributes.addClass(classes) }}>
   <div class="usa-grid-full">
     <div class="usa-width-two-thirds">
-      {{- product|without('variation_attributes','field_image') -}}
+      {{- product.body }}
+      <div class="usa-alert usa-alert-info product--variation--selected-info">
+        {{- product|without('body', 'variations', 'field_image') }}
+      </div>
+      {{- product.variations -}}
     </div>
     <div class="usa-width-one-third">
       {{ product.field_image }}

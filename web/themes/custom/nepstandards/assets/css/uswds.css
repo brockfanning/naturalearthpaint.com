@@ -3731,6 +3731,10 @@ input[type=search] {
 .ajax-progress-throbber .throbber {
   padding-right: 7px; }
 
+/* Styling of the product variation info that gets replaced by AJAX. */
+.product--variation--selected-info {
+  background-image: none; }
+
 /* Styling of the rendered attributes on some product pages. */
 .product--rendered-attribute .form-item {
   width: 100px;
@@ -3745,9 +3749,6 @@ input[type=search] {
     .product--rendered-attribute .form-item .ajax-progress-throbber .message {
       display: none; }
 
-.product--rendered-attribute legend {
-  display: none; }
-
 .product--rendered-attribute label {
   margin-top: 0;
   padding: 8px;
@@ -3760,6 +3761,18 @@ input[type=search] {
 
 .product-type--paint_pigments .product--rendered-attribute .form-item {
   width: 150px; }
+
+/* Styling of the "Size" attribute on product pages */
+.form-item-purchased-entity-0-attributes-attribute-size {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative; }
+  .form-item-purchased-entity-0-attributes-attribute-size .ajax-progress-throbber {
+    position: absolute;
+    top: 5px;
+    left: -8px; }
+    .form-item-purchased-entity-0-attributes-attribute-size .ajax-progress-throbber .message {
+      display: none; }
 
 /* Styling of the cart form */
 .view-commerce-cart-form form {
