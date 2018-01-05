@@ -1,10 +1,10 @@
-uuid: 5ce5dc70-213d-443e-815b-61313d23a6fe
+uuid: 9f90db8e-19e9-49b4-9b5f-c3be136f1dca
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_paragraph
-    - node.type.page
+    - commerce_product.commerce_product_type.paint_childrens
+    - field.storage.commerce_product.field_paragraphs_side
     - paragraphs.paragraphs_type.uswds_accordion
     - paragraphs.paragraphs_type.uswds_graphic_list
     - paragraphs.paragraphs_type.uswds_grid
@@ -13,11 +13,11 @@ dependencies:
     - paragraphs.paragraphs_type.video
   module:
     - entity_reference_revisions
-id: node.page.field_paragraph
-field_name: field_paragraph
-entity_type: node
-bundle: page
-label: Sections
+id: commerce_product.paint_childrens.field_paragraphs_side
+field_name: field_paragraphs_side
+entity_type: commerce_product
+bundle: paint_childrens
+label: 'Side sections'
 description: ''
 required: false
 translatable: false
@@ -29,36 +29,36 @@ settings:
     negate: 0
     target_bundles:
       uswds_text: uswds_text
-      uswds_grid: uswds_grid
-      uswds_graphic_list: uswds_graphic_list
-      uswds_accordion: uswds_accordion
       video: video
+      uswds_accordion: uswds_accordion
+      uswds_graphic_list: uswds_graphic_list
+      uswds_grid: uswds_grid
       uswds_hero: uswds_hero
     target_bundles_drag_drop:
       uswds_text:
         enabled: true
         weight: -19
-      uswds_grid:
-        enabled: true
-        weight: -18
-      uswds_graphic_list:
-        enabled: true
-        weight: -17
-      uswds_accordion:
-        enabled: true
-        weight: -16
       video:
         enabled: true
-        weight: -15
-      uswds_hero:
+        weight: -18
+      uswds_accordion:
         enabled: true
-        weight: -14
+        weight: -17
       uswds_accordion_item:
-        weight: -13
+        weight: -16
         enabled: false
       uswds_column:
-        weight: -12
+        weight: -15
         enabled: false
+      uswds_graphic_list:
+        enabled: true
+        weight: -14
+      uswds_grid:
+        enabled: true
+        weight: -13
+      uswds_hero:
+        enabled: true
+        weight: -12
       uswds_media_block:
         weight: -11
         enabled: false

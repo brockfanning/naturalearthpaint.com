@@ -6,11 +6,14 @@ dependencies:
     - commerce_product.commerce_product_type.supplies
     - field.field.commerce_product.supplies.body
     - field.field.commerce_product.supplies.field_image
+    - field.field.commerce_product.supplies.field_paragraphs_main
+    - field.field.commerce_product.supplies.field_paragraphs_side
     - field.field.commerce_product.supplies.stores
     - field.field.commerce_product.supplies.variations
     - responsive_image.styles.narrow
   module:
     - commerce_product
+    - entity_reference_revisions
     - responsive_image
     - text
 id: commerce_product.supplies.default
@@ -33,6 +36,24 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: responsive_image
+    region: content
+  field_paragraphs_main:
+    weight: 12
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_paragraphs_side:
+    weight: 13
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
   variations:
     type: commerce_add_to_cart

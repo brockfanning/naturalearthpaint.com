@@ -1,0 +1,11 @@
+uuid: d52099d8-63cc-4022-bd14-41d7d8962980
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'file:file:73c3b1bc-7086-437b-be92-b9da9ef88cf5'
+id: video
+label: Video
+icon_uuid: 73c3b1bc-7086-437b-be92-b9da9ef88cf5
+description: ''
+behavior_plugins: {  }
