@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - commerce_product.commerce_product_type.paint_childrens
-    - field.field.commerce_product.paint_childrens.body
     - field.field.commerce_product.paint_childrens.field_image
     - field.field.commerce_product.paint_childrens.field_paragraphs_main
     - field.field.commerce_product.paint_childrens.field_paragraphs_side
@@ -17,21 +16,11 @@ dependencies:
     - inline_entity_form
     - paragraphs
     - path
-    - text
 id: commerce_product.paint_childrens.default
 targetEntityType: commerce_product
 bundle: paint_childrens
 mode: default
 content:
-  body:
-    type: text_textarea_with_summary
-    weight: 4
-    settings:
-      rows: 9
-      summary_rows: 3
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
   created:
     type: datetime_timestamp
     weight: 7
