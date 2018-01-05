@@ -61,6 +61,7 @@
 /* Styling of the product variation info that gets replaced by AJAX. */
 .product--variation--selected-info {
   background-image: none;
+  margin-top: 0;
 }
 
 /* Styling of the rendered attributes on some product pages. */
@@ -114,6 +115,25 @@
       display: none;
     }
   }
+}
+
+/* Other miscellaneous styling of product pages */
+.product--full {
+  .field--type-image {
+    padding-bottom: 3rem;
+  }
+}
+
+/* Styling of paragraph entities */
+.paragraph,
+.paragraph.usa-section {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+/* Things that may need to go into USWDS Paragraphs contrib? */
+.field--name-field-uswds-body > :first-child {
+  margin-top: 0;
 }
 
 /* Styling of the cart form */

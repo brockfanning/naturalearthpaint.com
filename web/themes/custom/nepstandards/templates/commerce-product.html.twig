@@ -19,17 +19,18 @@
  * @ingroup themeable
  */
 #}
-{% set classes = [ 'product-type--' ~ product_entity.bundle ] %}
+{% set classes = [ 'product-type--' ~ product_entity.bundle, 'product--full' ] %}
 <article{{ attributes.addClass(classes) }}>
   <div class="usa-grid-full">
     <div class="usa-width-two-thirds">
-      {{- product.body }}
+      {{- product.field_paragraphs_main }}
       <div class="usa-alert usa-alert-info product--variation--selected-info">
-        {{- product|without('body', 'variations', 'field_image') }}
+        {{- product|without('field_paragraphs_side', 'field_paragraphs_main', 'variations', 'field_image') }}
       </div>
       {{- product.variations -}}
     </div>
     <div class="usa-width-one-third">
-      {{ product.field_image }}
+      {{- product.field_image -}}
+      {{- product.field_paragraphs_side -}}
     </div>
 </article>
