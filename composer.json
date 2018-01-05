@@ -47,6 +47,7 @@
         "drupal/token": "~1.0",
         "drupal/uswds": "^1.0@beta",
         "drupal/uswds_paragraphs": "1.x-dev",
+        "drupal/video_embed_field": "2.0.0-alpha2",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush/drush": "8.x-dev",
         "oomphinc/composer-installers-extender": "^1.1",
@@ -93,10 +94,7 @@
             "drupal/dc_ajax_add_cart": {
                 "popups": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744-8.patch"
             },
-            "drupal/uswds": {
-                "registry alter typo": "https://www.drupal.org/files/issues/uswds-d8-typo-in-theme-registry-alter-2933566-2.patch",
-                "search form id": "https://www.drupal.org/files/issues/uswds-d8-specify-search-button-id-2933573-2.patch"
-            }
+            "drupal/uswds": {}
         },
         "installer-types": [
             "bower-asset",
