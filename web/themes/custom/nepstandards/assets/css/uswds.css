@@ -3776,7 +3776,7 @@ input[type=search] {
       display: none; }
 
 /* Other miscellaneous styling of product pages */
-.product--full .field--type-image {
+.product--full .field--name-field-image {
   padding-bottom: 3rem; }
 
 /* Styling of paragraph entities */
