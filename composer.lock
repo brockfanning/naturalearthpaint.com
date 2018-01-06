@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab535d7c28fdef0ac51342db628dc53c",
-    "content-hash": "a8d86a7ffc508e32c52fef6f7e061fbf",
+    "hash": "442836abdece9615673e692445eb788c",
+    "content-hash": "766bdac1d6e18cfcec958788f1889262",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2657,6 +2657,60 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/entity_reference_revisions"
             }
+        },
+        {
+            "name": "drupal/exclude_node_title",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/exclude_node_title",
+                "reference": "d3fe64b62db22d3da05a391215496c3301482347"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-beta1+7-dev",
+                    "datestamp": "1471985049",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "fizk",
+                    "homepage": "https://www.drupal.org/user/473174"
+                },
+                {
+                    "name": "gabrielu",
+                    "homepage": "https://www.drupal.org/user/279352"
+                },
+                {
+                    "name": "id.tarzanych",
+                    "homepage": "https://www.drupal.org/user/2776543"
+                },
+                {
+                    "name": "jordanpagewhite",
+                    "homepage": "https://www.drupal.org/user/3162067"
+                }
+            ],
+            "description": "Excludes a node title from display. It provides a checkbox on node-edit pages for easier exclusion. You can also exclude title display from teaser pages.",
+            "homepage": "https://www.drupal.org/project/exclude_node_title",
+            "support": {
+                "source": "http://cgit.drupalcode.org/exclude_node_title"
+            },
+            "time": "2017-09-09 00:56:04"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -8260,6 +8314,7 @@
     "stability-flags": {
         "drupal/commerce_shipping": 20,
         "drupal/dc_ajax_add_cart": 20,
+        "drupal/exclude_node_title": 20,
         "drupal/physical": 20,
         "drupal/uswds": 10,
         "drupal/uswds_paragraphs": 20,
