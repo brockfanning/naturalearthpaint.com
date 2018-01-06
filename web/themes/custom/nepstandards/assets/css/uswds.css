@@ -3780,7 +3780,7 @@ input[type=search] {
   padding-bottom: 3rem; }
 
 /* Styling of paragraph entities */
-.paragraph,
+.paragraph:not(.usa-hero),
 .paragraph.usa-section {
   padding-top: 0;
   padding-bottom: 3rem; }
@@ -3803,6 +3803,10 @@ input[type=search] {
 .usa-media_block-img {
   max-width: 50%;
   height: auto; }
+
+/* Styling of heroes */
+.usa-hero .usa-section-dark h2 {
+  color: #ffffff; }
 
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
  * Testing this here before creating a pull request on the 18F web-design-standards repo.

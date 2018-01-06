@@ -125,7 +125,7 @@
 }
 
 /* Styling of paragraph entities */
-.paragraph,
+.paragraph:not(.usa-hero),
 .paragraph.usa-section {
   padding-top: 0;
   padding-bottom: 3rem;
@@ -156,6 +156,15 @@
 .usa-media_block-img {
   max-width: 50%;
   height: auto;
+}
+
+/* Styling of heroes */
+.usa-hero {
+  .usa-section-dark {
+    h2 {
+      color: $color-white;
+    }
+  }
 }
 
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
