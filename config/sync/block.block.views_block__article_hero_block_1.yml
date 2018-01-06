@@ -1,0 +1,25 @@
+uuid: 22aa7ee0-faca-4b55-82e2-561b8a63fadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article_hero
+  module:
+    - views
+  theme:
+    - nepstandards
+id: views_block__article_hero_block_1
+theme: nepstandards
+region: hero
+weight: 0
+provider: null
+plugin: 'views_block:article_hero-block_1'
+settings:
+  id: 'views_block:article_hero-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

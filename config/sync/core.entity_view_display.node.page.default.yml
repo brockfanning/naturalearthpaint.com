@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_hero
     - field.field.node.page.field_paragraph
     - node.type.page
   module:
@@ -29,4 +30,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_hero: true
