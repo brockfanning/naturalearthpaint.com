@@ -3814,12 +3814,12 @@ input[type=search] {
   margin-right: 3rem; }
 
 /* Styling of embedded media */
-figure.embedded-entity {
+.embedded-entity {
   margin-left: 0;
   margin-right: 0; }
-  figure.embedded-entity.align-left {
+  .embedded-entity.align-left {
     margin-right: 40px; }
-  figure.embedded-entity.align-right {
+  .embedded-entity.align-right {
     margin-left: 40px; }
 
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
