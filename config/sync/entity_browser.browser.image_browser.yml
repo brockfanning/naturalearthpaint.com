@@ -1,0 +1,43 @@
+uuid: 419e90b8-4496-4ca9-a1a9-0d09e927cedc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.image_browser
+  module:
+    - media_entity_image
+    - views
+name: image_browser
+label: 'Image Browser'
+display: iframe
+display_configuration:
+  width: 100%
+  height: '640'
+  link_text: 'Click here to browse or upload images'
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  411c106f-b919-451f-a7ec-b0cccafc098c:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_bundle: image
+      upload_location: 'public://images'
+      multiple: '1'
+      submit_text: 'Select image'
+    uuid: 411c106f-b919-451f-a7ec-b0cccafc098c
+    weight: 1
+    label: Upload
+    id: media_entity_image_upload
+  ce579185-e232-4748-879a-f94ad7d10813:
+    settings:
+      view: image_browser
+      view_display: entity_browser_1
+      submit_text: 'Select image'
+      auto_select: false
+    uuid: ce579185-e232-4748-879a-f94ad7d10813
+    weight: 2
+    label: View
+    id: view

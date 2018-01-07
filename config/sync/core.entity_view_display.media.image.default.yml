@@ -1,0 +1,34 @@
+uuid: fbb86baf-8606-45c9-a266-6ecec40b2807
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_height
+    - field.field.media.image.field_image
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_width
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime_type: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true

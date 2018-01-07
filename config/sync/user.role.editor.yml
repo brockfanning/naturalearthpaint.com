@@ -1,0 +1,10 @@
+uuid: 5e6719b4-6847-40ba-9d74-dbf4b6f0c017
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format basic_html'

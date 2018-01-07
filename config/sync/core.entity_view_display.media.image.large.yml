@@ -1,0 +1,36 @@
+uuid: 39014ffb-3795-4739-8972-a14f776d4c86
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.large
+    - field.field.media.image.field_height
+    - field.field.media.image.field_image
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_width
+    - image.style.large
+    - media_entity.bundle.image
+  module:
+    - image
+id: media.image.large
+targetEntityType: media
+bundle: image
+mode: large
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  field_height: true
+  field_mime_type: true
+  field_width: true
+  name: true
+  thumbnail: true
+  uid: true

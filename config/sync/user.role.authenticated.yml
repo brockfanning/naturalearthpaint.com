@@ -19,5 +19,4 @@ permissions:
   - 'search content'
   - 'skip comment approval'
   - 'use exclude node title'
-  - 'use text format basic_html'
   - 'view commerce_product'

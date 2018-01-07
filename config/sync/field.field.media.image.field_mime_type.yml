@@ -1,0 +1,19 @@
+uuid: 68aa99f8-a9bb-43ec-af40-86c8653c069c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_mime_type
+    - media_entity.bundle.image
+id: media.image.field_mime_type
+field_name: field_mime_type
+entity_type: media
+bundle: image
+label: 'MIME Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

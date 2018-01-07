@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - editor
+    - entity_embed
     - linkit
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
@@ -17,7 +18,7 @@ filters:
     status: true
     weight: -10
     settings:
-      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <br> <span> <img src alt height width data-entity-type data-entity-uuid data-align data-caption> <p class="usa-font-lead"> <table class="usa-table-borderless"> <a href hreflang !href accesskey id rel target title data-entity-substitution data-entity-type data-entity-uuid class="usa-button usa-button-gray usa-button-outline usa-button-outline-inverse usa-button-big usa-button-secondary">'
+      allowed_html: '<em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <br> <span> <img src alt height width data-entity-type data-entity-uuid data-align data-caption> <p class="usa-font-lead"> <table class="usa-table-borderless"> <a href hreflang !href accesskey id rel target title data-entity-substitution data-entity-type data-entity-uuid class="usa-button usa-button-gray usa-button-outline usa-button-outline-inverse usa-button-big usa-button-secondary"> <drupal-entity data-entity-type data-entity-uuid data-entity-embed-display data-entity-embed-display-settings data-align data-caption data-embed-button>'
       filter_html_help: false
       filter_html_nofollow: false
   filter_align:
@@ -32,16 +33,10 @@ filters:
     status: true
     weight: 8
     settings: {  }
-  filter_html_image_secure:
-    id: filter_html_image_secure
-    provider: filter
-    status: true
-    weight: 9
-    settings: {  }
   editor_file_reference:
     id: editor_file_reference
     provider: editor
-    status: true
+    status: false
     weight: 11
     settings: {  }
   linkit:
@@ -51,3 +46,9 @@ filters:
     weight: 0
     settings:
       title: false
+  entity_embed:
+    id: entity_embed
+    provider: entity_embed
+    status: true
+    weight: 0
+    settings: {  }

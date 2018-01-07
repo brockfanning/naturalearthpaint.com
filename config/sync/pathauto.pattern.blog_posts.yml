@@ -1,0 +1,22 @@
+uuid: 84c5d1a5-e1aa-4072-880c-ef0d6b876d7d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: blog_posts
+label: 'Blog posts'
+type: 'canonical_entities:node'
+pattern: 'blogs/naturalearthpaint-com/[node:title]'
+selection_criteria:
+  d40b8cbd-4845-4916-ae48-001e25659c5f:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d40b8cbd-4845-4916-ae48-001e25659c5f
+selection_logic: and
+weight: -5
+relationships: {  }

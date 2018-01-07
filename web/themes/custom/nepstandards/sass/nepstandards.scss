@@ -175,6 +175,18 @@
   }
 }
 
+/* Styling of embedded media */
+figure.embedded-entity {
+  margin-left: 0;
+  margin-right: 0;
+  &.align-left {
+    margin-right: 40px;
+  }
+  &.align-right {
+    margin-left: 40px;
+  }
+}
+
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
  * Testing this here before creating a pull request on the 18F web-design-standards repo.
  * TODO: An alternative would be to make sure Drupal (or Commerce?) doesn't add
