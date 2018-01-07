@@ -21,6 +21,30 @@
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "slick": {
+            "type": "package",
+            "package": {
+                "name": "kenwheeler/slick",
+                "version": "v1.8.1",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/kenwheeler/slick/archive/v1.8.1.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        "easing": {
+            "type": "package",
+            "package": {
+                "name": "gdsmith/easing",
+                "version": "v1.4.0",
+                "type": "drupal-library",
+                "dist": {
+                    "url": "https://github.com/gdsmith/jquery.easing/archive/v1.4.0.zip",
+                    "type": "zip"
+                }
+            }
         }
     },
     "config": {
@@ -50,6 +74,7 @@
         "drupal/pathauto": "^1.0",
         "drupal/physical": "1.x-dev",
         "drupal/search_api": "~1.0",
+        "drupal/slick": "^1.0",
         "drupal/swiftmailer": "~1.0",
         "drupal/token": "~1.0",
         "drupal/uswds": "^1.0@beta",
@@ -57,6 +82,8 @@
         "drupal/video_embed_field": "2.0.0-alpha2",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush/drush": "8.x-dev",
+        "gdsmith/easing": "^1.4",
+        "kenwheeler/slick": "v1.8.1",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^1.0",
         "webmozart/path-util": "^2.3"
