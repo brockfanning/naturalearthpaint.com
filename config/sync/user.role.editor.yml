@@ -7,4 +7,14 @@ label: Editor
 weight: 3
 is_admin: null
 permissions:
+  - 'access content overview'
+  - 'access files overview'
+  - 'access image_browser entity browser pages'
+  - 'access media overview'
+  - 'administer media'
+  - 'administer menu'
+  - 'administer nodes'
+  - 'create url aliases'
+  - 'exclude any node title'
+  - 'exclude own node title'
   - 'use text format basic_html'

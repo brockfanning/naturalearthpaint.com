@@ -20,3 +20,4 @@ permissions:
   - 'skip comment approval'
   - 'use exclude node title'
   - 'view commerce_product'
+  - 'view media'

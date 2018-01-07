@@ -18,3 +18,4 @@ permissions:
   - 'use exclude node title'
   - 'use text format restricted_html'
   - 'view commerce_product'
+  - 'view media'
