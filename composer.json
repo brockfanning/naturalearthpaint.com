@@ -75,6 +75,7 @@
         "drupal/physical": "1.x-dev",
         "drupal/search_api": "~1.0",
         "drupal/slick": "^1.0",
+        "drupal/slick_views": "1.x-dev",
         "drupal/swiftmailer": "~1.0",
         "drupal/token": "~1.0",
         "drupal/uswds": "^1.0@beta",
@@ -128,7 +129,10 @@
             "drupal/dc_ajax_add_cart": {
                 "popups": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744-8.patch"
             },
-            "drupal/uswds": {}
+            "drupal/uswds": {},
+            "drupal/uswds_paragraphs": {
+                "multiple heroes": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-multiple_heroes-2935023-2.patch"
+            }
         },
         "installer-types": [
             "bower-asset",

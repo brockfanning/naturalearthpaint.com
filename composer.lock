@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c4789f3f9e9d3a09026158118e0858c",
-    "content-hash": "c5f11520f4f08b215e410e62fc1c12b2",
+    "hash": "578200561935080e941ce01fd7c2ef7c",
+    "content-hash": "dd808473cfd613e57f3943dff1b72c2f",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3861,6 +3861,49 @@
             }
         },
         {
+            "name": "drupal/slick_views",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/slick_views",
+                "reference": "c17de7ec10c97ca4da084d90473d6832ad3e335b"
+            },
+            "require": {
+                "drupal/core": "*",
+                "drupal/slick": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-rc1+1-dev",
+                    "datestamp": "1486726983",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "gausarts",
+                    "homepage": "https://www.drupal.org/user/159062"
+                }
+            ],
+            "description": "Provides Slick carousel integration with Views.",
+            "homepage": "https://www.drupal.org/project/slick_views",
+            "support": {
+                "source": "http://cgit.drupalcode.org/slick_views"
+            },
+            "time": "2017-02-10 11:40:20"
+        },
+        {
             "name": "drupal/state_machine",
             "version": "1.0.0-beta3",
             "source": {
@@ -4170,8 +4213,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/uswds_paragraphs",
                 "issues": "https://www.drupal.org/project/issues/uswds_paragraphs?categories=All"
-            },
-            "time": "2017-08-11 01:19:35"
+            }
         },
         {
             "name": "drupal/video_embed_field",
@@ -9049,6 +9091,7 @@
         "drupal/entity_embed": 20,
         "drupal/exclude_node_title": 20,
         "drupal/physical": 20,
+        "drupal/slick_views": 20,
         "drupal/uswds": 10,
         "drupal/uswds_paragraphs": 20,
         "drupalcommerce/commerce_base": 20,
