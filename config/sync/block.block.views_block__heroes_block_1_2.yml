@@ -1,0 +1,25 @@
+uuid: efb9c1b2-9bac-4666-b4ae-e17e10b2b152
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.heroes
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__heroes_block_1_2
+theme: bartik
+region: featured_top
+weight: 0
+provider: null
+plugin: 'views_block:heroes-block_1'
+settings:
+  id: 'views_block:heroes-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility: {  }

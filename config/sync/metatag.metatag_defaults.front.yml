@@ -7,5 +7,6 @@ _core:
 id: front
 label: 'Front page'
 tags:
-  canonical_url: '[site:url]'
+  title: 'Natural Earth Paint | Non-toxic, Eco-friendly Paints from the Earth'
   shortlink: '[site:url]'
+  canonical_url: '[site:url]'

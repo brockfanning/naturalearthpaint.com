@@ -13,7 +13,7 @@ id: paragraph.uswds_hero.field_uswds_button
 field_name: field_uswds_button
 entity_type: paragraph
 bundle: uswds_hero
-label: 'Hero callout button'
+label: 'Hero button'
 description: 'If a button is provided, it will appear in this hero''s callout.'
 required: false
 translatable: true

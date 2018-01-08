@@ -77,13 +77,13 @@ display:
           link: ''
           class: ''
           id: ''
-          override: false
+          override: true
           overridables:
-            arrows: '0'
+            arrows: arrows
+            draggable: draggable
+            infinite: infinite
             autoplay: '0'
             dots: '0'
-            draggable: '0'
-            infinite: '0'
             mouseWheel: '0'
             randomize: '0'
             variableWidth: '0'

@@ -11,7 +11,7 @@ id: paragraph.uswds_hero.field_uswds_body
 field_name: field_uswds_body
 entity_type: paragraph
 bundle: uswds_hero
-label: 'Hero callout text'
+label: 'Hero text'
 description: ''
 required: false
 translatable: true

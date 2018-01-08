@@ -1,0 +1,26 @@
+uuid: c4a00b19-3dd0-4a99-98a1-44d15e4492fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.slide.field_slide_link
+    - field.field.paragraph.slide.field_uswds_image
+    - paragraphs.paragraphs_type.slide
+  module:
+    - image
+id: paragraph.slide.default
+targetEntityType: paragraph
+bundle: slide
+mode: default
+content:
+  field_uswds_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  field_slide_link: true

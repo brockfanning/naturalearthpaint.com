@@ -27,7 +27,7 @@ content:
     settings:
       title: Hero
       title_plural: Heroes
-      edit_mode: open
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none
@@ -40,7 +40,7 @@ content:
     settings:
       title: Section
       title_plural: Sections
-      edit_mode: open
+      edit_mode: closed
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: _none

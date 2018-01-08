@@ -8,7 +8,6 @@ dependencies:
     - paragraphs.paragraphs_type.uswds_accordion
     - paragraphs.paragraphs_type.uswds_graphic_list
     - paragraphs.paragraphs_type.uswds_grid
-    - paragraphs.paragraphs_type.uswds_hero
     - paragraphs.paragraphs_type.uswds_text
     - paragraphs.paragraphs_type.video
   module:
@@ -33,7 +32,6 @@ settings:
       uswds_graphic_list: uswds_graphic_list
       uswds_accordion: uswds_accordion
       video: video
-      uswds_hero: uswds_hero
     target_bundles_drag_drop:
       uswds_text:
         enabled: true
@@ -51,8 +49,8 @@ settings:
         enabled: true
         weight: -15
       uswds_hero:
-        enabled: true
         weight: -14
+        enabled: false
       uswds_accordion_item:
         weight: -13
         enabled: false
@@ -61,5 +59,8 @@ settings:
         enabled: false
       uswds_media_block:
         weight: -11
+        enabled: false
+      slide:
+        weight: 11
         enabled: false
 field_type: entity_reference_revisions
