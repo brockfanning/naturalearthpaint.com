@@ -3817,7 +3817,7 @@ input[type=search] {
   padding-bottom: 3rem; }
 
 /* Styling of paragraph entities */
-.paragraph:not(.usa-hero),
+.paragraph:not(.usa-hero):not(.paragraph--type--uswds-accordion-item),
 .paragraph.usa-section {
   padding-top: 0;
   padding-bottom: 3rem; }
