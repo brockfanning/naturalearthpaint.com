@@ -80,9 +80,9 @@ display:
           override: true
           overridables:
             arrows: arrows
+            autoplay: autoplay
             draggable: draggable
             infinite: infinite
-            autoplay: '0'
             dots: '0'
             mouseWheel: '0'
             randomize: '0'
