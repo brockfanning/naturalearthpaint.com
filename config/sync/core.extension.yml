@@ -2,6 +2,7 @@ module:
   address: 0
   admin_toolbar: 0
   automated_cron: 0
+  blazy: 0
   block: 0
   block_content: 0
   breakpoint: 0
@@ -61,6 +62,9 @@ module:
   responsive_image: 0
   search: 0
   shortcut: 0
+  slick: 0
+  slick_ui: 0
+  slick_views: 0
   state_machine: 0
   swiftmailer: 0
   system: 0

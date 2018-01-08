@@ -1,0 +1,21 @@
+uuid: 25417520-c48c-4158-a28b-514fa786c368
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_uswds_body
+    - paragraphs.paragraphs_type.uswds_hero
+  module:
+    - text
+id: paragraph.uswds_hero.field_uswds_body
+field_name: field_uswds_body
+entity_type: paragraph
+bundle: uswds_hero
+label: 'Hero callout text'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

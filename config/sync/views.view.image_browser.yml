@@ -11,7 +11,7 @@ dependencies:
     - media_entity
     - user
 id: image_browser
-label: 'Image Browser'
+label: 'NEP: Image Browser'
 module: views
 description: ''
 tag: ''

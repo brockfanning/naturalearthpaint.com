@@ -1,0 +1,34 @@
+uuid: 9e80cd37-1683-4893-a972-102aab0f8faa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.heroes
+  module:
+    - node
+    - views
+  theme:
+    - nepstandards
+id: views_block__heroes_block_1
+theme: nepstandards
+region: hero
+weight: 0
+provider: null
+plugin: 'views_block:heroes-block_1'
+settings:
+  id: 'views_block:heroes-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
