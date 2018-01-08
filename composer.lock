@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "578200561935080e941ce01fd7c2ef7c",
-    "content-hash": "dd808473cfd613e57f3943dff1b72c2f",
+    "hash": "9cfd7e2e938a0e201359fd970bd701ef",
+    "content-hash": "a1b363d60f1d23af7b6d8f6a153d6ce4",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4178,7 +4178,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/uswds_paragraphs",
-                "reference": "6541d8542970da1b8e2532f50f02ad84eeea570b"
+                "reference": "f7927a6e7bc5bf12a222e960e844af8b223e3fd7"
             },
             "require": {
                 "drupal/core": "*",
@@ -4190,12 +4190,17 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2+7-dev",
-                    "datestamp": "1502238544",
+                    "version": "8.x-1.0-beta3+1-dev",
+                    "datestamp": "1502414647",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "multiple heroes": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-multiple_heroes-2935023-2.patch",
+                    "hero text": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-hero_text_instead_of_link-2935027-2.patch",
+                    "hero normal button": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-hero_normal_button-2935087-2.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4213,7 +4218,8 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/uswds_paragraphs",
                 "issues": "https://www.drupal.org/project/issues/uswds_paragraphs?categories=All"
-            }
+            },
+            "time": "2018-01-08 11:55:17"
         },
         {
             "name": "drupal/video_embed_field",

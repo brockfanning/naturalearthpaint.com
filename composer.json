@@ -131,7 +131,9 @@
             },
             "drupal/uswds": {},
             "drupal/uswds_paragraphs": {
-                "multiple heroes": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-multiple_heroes-2935023-2.patch"
+                "multiple heroes": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-multiple_heroes-2935023-2.patch",
+                "hero text": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-hero_text_instead_of_link-2935027-2.patch",
+                "hero normal button": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-hero_normal_button-2935087-2.patch"
             }
         },
         "installer-types": [
