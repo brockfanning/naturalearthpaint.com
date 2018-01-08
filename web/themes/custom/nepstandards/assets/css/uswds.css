@@ -3689,9 +3689,41 @@ input[type=search] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
+/* Slick styling and layout fixes */
+.usa-header {
+  min-height: 100px; }
+  @media screen and (min-width: 481px) {
+    .usa-header {
+      min-height: 125px; } }
+  @media screen and (min-width: 600px) {
+    .usa-header {
+      min-height: 150px; } }
+
+.usa-logo {
+  clear: both; }
+  @media screen and (min-width: 951px) {
+    .usa-logo {
+      clear: none; } }
+
+.slick-arrow,
+.slick-arrow:hover {
+  line-height: 0;
+  font-size: 0;
+  margin: -40px 0 0 0;
+  padding: 20px;
+  background: none;
+  width: auto; }
+
+.slick-next {
+  right: 10px; }
+
+.slick-prev {
+  left: 10px; }
+
 /* Styling for the top-right shopping cart block. */
 .block-commerce-cart {
-  float: left; }
+  position: absolute;
+  left: 0px; }
   .block-commerce-cart .cart-block--link__expand {
     text-decoration: none;
     display: inline-block; }
@@ -3703,9 +3735,10 @@ input[type=search] {
   .block-commerce-cart .cart-block--summary__count {
     color: #5b616b;
     font-size: 1.5rem; }
-  @media screen and (min-width: 600px) {
+  @media screen and (min-width: 951px) {
     .block-commerce-cart {
-      float: right; }
+      float: right;
+      position: static; }
       .block-commerce-cart .cart-block--summary__icon {
         margin-left: 10px;
         margin-right: 0px;
@@ -3807,6 +3840,9 @@ input[type=search] {
 /* Styling of heroes */
 .usa-hero .usa-section-dark h2 {
   color: #ffffff; }
+
+.usa-hero .usa-hero-callout:empty {
+  display: none; }
 
 /* Styling of blog listing */
 .node--type-article.node--view-mode-teaser .field--name-field-image {

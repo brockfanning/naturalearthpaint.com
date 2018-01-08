@@ -1,6 +1,39 @@
+/* Slick styling and layout fixes */
+.usa-header {
+  min-height: 100px;
+  @include media($small-screen) {
+    min-height: 125px;
+  }
+  @include media($medium-screen) {
+    min-height: 150px;
+  }
+}
+.usa-logo {
+  clear: both;
+  @include media($nav-width) {
+    clear: none;
+  }
+}
+.slick-arrow,
+.slick-arrow:hover {
+  line-height: 0;
+  font-size: 0;
+  margin: -40px 0 0 0;
+  padding: 20px;
+  background: none;
+  width: auto;
+}
+.slick-next {
+  right: 10px;
+}
+.slick-prev {
+  left: 10px;
+}
+
 /* Styling for the top-right shopping cart block. */
 .block-commerce-cart {
-  float: left;
+  position: absolute;
+  left: 0px;
 
   .cart-block--link__expand {
     text-decoration: none;
@@ -19,9 +52,9 @@
     color: $color-gray;
     font-size: 1.5rem;
   }
-
-  @include media($medium-screen) {
+  @include media($nav-width) {
     float: right;
+    position: static;
 
     .cart-block--summary__icon {
       margin-left: 10px;
@@ -164,6 +197,9 @@
     h2 {
       color: $color-white;
     }
+  }
+  .usa-hero-callout:empty {
+    display: none;
   }
 }
 

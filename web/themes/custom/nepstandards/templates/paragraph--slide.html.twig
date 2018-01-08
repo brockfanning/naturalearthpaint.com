@@ -1,0 +1,27 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    'usa-grid',
+  ]
+%}
+{% block paragraph %}
+
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      {% if paragraph.field_slide_link.0 %}
+      <a href="{{ paragraph.field_slide_link.0.url }}">
+      {% endif %}
+
+      {{ content }}
+
+      {% if paragraph.field_slide_link.0 %}
+      </a>
+      {% endif %}
+
+    {% endblock %}
+  </div>
+
+{% endblock paragraph %}
