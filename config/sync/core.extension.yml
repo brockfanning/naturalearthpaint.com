@@ -22,7 +22,6 @@ module:
   commerce_store: 0
   commerce_tax: 0
   config: 0
-  contact: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -77,6 +76,8 @@ module:
   uswds_paragraphs: 0
   video_embed_field: 0
   views_ui: 0
+  webform: 0
+  webform_node: 0
   menu_link_content: 1
   pathauto: 1
   views: 10

@@ -31,8 +31,8 @@ content:
     weight: 0
     region: content
     settings:
-      progress_indicator: throbber
       preview_image_style: thumbnail
+      progress_indicator: throbber
     third_party_settings: {  }
   field_uswds_title:
     type: string_textfield
