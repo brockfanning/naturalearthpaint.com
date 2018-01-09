@@ -3822,6 +3822,10 @@ input[type=search] {
   padding-top: 0;
   padding-bottom: 3rem; }
 
+/* Styling of footer */
+.usa-footer-contact-links {
+  padding-top: 40px; }
+
 /* Things that may need to go into USWDS Paragraphs contrib? */
 .field--name-field-uswds-body > :first-child {
   margin-top: 0; }
