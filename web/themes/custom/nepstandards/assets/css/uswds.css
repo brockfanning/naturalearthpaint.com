@@ -1480,7 +1480,7 @@ legend {
 .usa-form-group-year {
   width: 7rem; }
 
-.usa-label, .usa-label-big {
+.usa-label, .usa-label-big, .field--name-field-tags .field__item a {
   background-color: #5b616b;
   border-radius: 2px;
   color: #ffffff;
@@ -1488,7 +1488,7 @@ legend {
   margin-right: 0.5rem;
   padding: 0.1rem 0.7rem;
   text-transform: uppercase; }
-  .usa-label:only-of-type, .usa-label-big:only-of-type {
+  .usa-label:only-of-type, .usa-label-big:only-of-type, .field--name-field-tags .field__item a:only-of-type {
     margin-right: 0; }
 
 .usa-label-big {
@@ -3865,6 +3865,13 @@ input[type=search] {
     margin-right: 40px; }
   .embedded-entity.align-right {
     margin-left: 40px; }
+
+/* Styling of article nodes */
+.field--name-field-tags {
+  margin-bottom: 20px; }
+  .field--name-field-tags .field__item {
+    display: inline-block;
+    margin-right: 20px; }
 
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
  * Testing this here before creating a pull request on the 18F web-design-standards repo.

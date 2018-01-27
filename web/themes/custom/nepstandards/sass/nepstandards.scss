@@ -235,6 +235,19 @@
   }
 }
 
+/* Styling of article nodes */
+.field--name-field-tags {
+  margin-bottom: 20px;
+
+  .field__item {
+    display: inline-block;
+    margin-right: 20px;
+    a {
+      @extend .usa-label;
+    }
+  }
+}
+
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
  * Testing this here before creating a pull request on the 18F web-design-standards repo.
  * TODO: An alternative would be to make sure Drupal (or Commerce?) doesn't add
