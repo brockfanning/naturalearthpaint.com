@@ -1,0 +1,13 @@
+<article{{ attributes.addClass('article--sidebar') }}>
+
+  <div{{ content_attributes }}>
+    {{ content }}
+  </div>
+
+  {{ title_prefix }}
+  <h4{{ title_attributes }}>
+    <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+  </h4>
+  {{ title_suffix }}
+
+</article>

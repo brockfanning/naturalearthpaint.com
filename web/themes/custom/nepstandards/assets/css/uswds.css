@@ -3689,6 +3689,10 @@ input[type=search] {
     top: 0;
     transition: all 0.2s ease-in-out; }
 
+/* Sitewide styles */
+img {
+  height: auto; }
+
 /* Slick styling and layout fixes */
 .usa-header {
   min-height: 100px; }
@@ -3872,6 +3876,12 @@ input[type=search] {
   .field--name-field-tags .field__item {
     display: inline-block;
     margin-right: 20px; }
+
+/* Styling of article nodes in the sidebar */
+.article--sidebar {
+  margin-bottom: 20px; }
+  .article--sidebar h4 {
+    margin-top: 0; }
 
 /* Override of USWDS styling to use "general" instead of "adjacent" sibling selectors.
  * Testing this here before creating a pull request on the 18F web-design-standards repo.

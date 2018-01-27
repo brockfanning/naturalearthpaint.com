@@ -1,3 +1,8 @@
+/* Sitewide styles */
+img {
+  height: auto;
+}
+
 /* Slick styling and layout fixes */
 .usa-header {
   min-height: 100px;
@@ -245,6 +250,14 @@
     a {
       @extend .usa-label;
     }
+  }
+}
+
+/* Styling of article nodes in the sidebar */
+.article--sidebar {
+  margin-bottom: 20px;
+  h4 {
+    margin-top: 0;
   }
 }
 
