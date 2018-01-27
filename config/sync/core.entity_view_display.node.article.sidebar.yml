@@ -1,0 +1,36 @@
+uuid: 3966cbbb-b236-4617-8314-87f4a92acf34
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.sidebar
+    - field.field.node.article.body
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_image
+    - field.field.node.article.field_tags
+    - image.style.large
+    - node.type.article
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: mQYC9J1b__egRYMYrVXvT9cdvnj5ltJqyCf6Yx04ELU
+id: node.article.sidebar
+targetEntityType: node
+bundle: article
+mode: sidebar
+content:
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_hero: true
+  field_tags: true
+  links: true

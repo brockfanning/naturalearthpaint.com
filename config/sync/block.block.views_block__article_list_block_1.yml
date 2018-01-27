@@ -1,0 +1,32 @@
+uuid: 72eb78e4-9c06-4622-a495-760514dbe491
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.article_list
+  module:
+    - ctools
+    - views
+  theme:
+    - nepstandards
+id: views_block__article_list_block_1
+theme: nepstandards
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:article_list-block_1'
+settings:
+  id: 'views_block:article_list-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
