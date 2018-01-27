@@ -1,0 +1,20 @@
+uuid: f3935a85-e57c-4c1a-a1f0-564447f02638
+langcode: en
+status: true
+dependencies:
+  module:
+    - sharethis
+  theme:
+    - nepstandards
+id: sharethis
+theme: nepstandards
+region: content
+weight: 0
+provider: null
+plugin: sharethis_block
+settings:
+  id: sharethis_block
+  label: Sharethis
+  provider: sharethis
+  label_display: '0'
+visibility: {  }

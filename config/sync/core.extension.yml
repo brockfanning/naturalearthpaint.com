@@ -60,6 +60,7 @@ module:
   rdf: 0
   responsive_image: 0
   search: 0
+  sharethis: 0
   shortcut: 0
   slick: 0
   slick_ui: 0
