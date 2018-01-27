@@ -74,6 +74,7 @@
         "drupal/pathauto": "^1.0",
         "drupal/physical": "1.x-dev",
         "drupal/search_api": "~1.0",
+        "drupal/sharethis": "2.x-dev",
         "drupal/slick": "^1.0",
         "drupal/slick_views": "1.x-dev",
         "drupal/swiftmailer": "~1.0",
