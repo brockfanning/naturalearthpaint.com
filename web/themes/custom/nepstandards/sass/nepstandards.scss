@@ -180,6 +180,21 @@ img {
 .usa-footer-contact-links {
   padding-top: 40px;
 }
+.usa-link-google {
+  @extend .usa-social_link;
+  background-image: url('../../images/social-icons/google-plus.png');
+  background-image: url('../../images/social-icons/google-plus.svg');
+}
+.usa-link-instagram {
+  @extend .usa-social_link;
+  background-image: url('../../images/social-icons/instagram.png');
+  background-image: url('../../images/social-icons/instagram.svg');
+}
+.usa-link-pinterest {
+  @extend .usa-social_link;
+  background-image: url('../../images/social-icons/pinterest.png');
+  background-image: url('../../images/social-icons/pinterest.svg');
+}
 
 /* Things that may need to go into USWDS Paragraphs contrib? */
 .field--name-field-uswds-body > :first-child {
