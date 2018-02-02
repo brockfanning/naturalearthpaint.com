@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6ed285bfabda049538c094dcd12f68ff",
-    "content-hash": "4e68083ba5adb1b331f17fc6d56bc6e2",
+    "hash": "943396650f7d8d956efdffb10fcd6fab",
+    "content-hash": "216d4c75c99b68f5a740399cd2e1519e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2643,7 +2643,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/dc_ajax_add_cart",
-                "reference": "43e938a71d48850eb5fafdf2370289cc39ec2535"
+                "reference": "13745c96a7b81fa72c70dbeeb45adcca9ab369a4"
             },
             "require": {
                 "drupal/commerce": "~2.0",
@@ -2651,21 +2651,25 @@
                 "drupal/commerce_product": "*",
                 "drupal/core": "~8.0"
             },
+            "require-dev": {
+                "drupal/commerce_cart": "*",
+                "drupal/commerce_product": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3+18-dev",
-                    "datestamp": "1511417585",
+                    "version": "8.x-1.0-alpha4+21-dev",
+                    "datestamp": "1515566285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
-                    "popups": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744-8.patch"
+                    "popups": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744-12.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2683,7 +2687,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/dc_ajax_add_cart"
             },
-            "time": "2017-11-23 06:08:19"
+            "time": "2018-01-17 06:52:07"
         },
         {
             "name": "drupal/embed",
