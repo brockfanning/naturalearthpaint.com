@@ -34,6 +34,18 @@ img {
 .slick-prev {
   left: 10px;
 }
+@include media($large-screen) {
+  .slick {
+    .slick__arrow {
+      display: none;
+    }
+    &:hover {
+      .slick__arrow {
+        display: block;
+      }
+    }
+  }
+}
 
 /* Styling for breadcrumbs */
 .usa-breadcrumbs {

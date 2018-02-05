@@ -3724,6 +3724,12 @@ img {
 .slick-prev {
   left: 10px; }
 
+@media screen and (min-width: 1201px) {
+  .slick .slick__arrow {
+    display: none; }
+  .slick:hover .slick__arrow {
+    display: block; } }
+
 /* Styling for breadcrumbs */
 .usa-breadcrumbs .usa-nav-secondary-links {
   margin-top: 0; }
