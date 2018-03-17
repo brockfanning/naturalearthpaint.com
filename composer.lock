@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "943396650f7d8d956efdffb10fcd6fab",
-    "content-hash": "216d4c75c99b68f5a740399cd2e1519e",
+    "hash": "9ff16a3e8f1f77edd9680abbf243f833",
+    "content-hash": "539c6fa9a603e9ea8f805238ee20d272",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2016,6 +2016,82 @@
             }
         },
         {
+            "name": "drupal/commerce_ups",
+            "version": "dev-3.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/commerce_ups",
+                "reference": "6492d1482d456060f96682c49175bc7304492b80"
+            },
+            "require": {
+                "drupal/commerce_shipping": "*",
+                "drupal/core": "~8.0",
+                "gabrielbull/ups-api": "~0.7"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-3.x": "3.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-3.x-dev",
+                    "datestamp": "1514998984",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Andrew M Riley",
+                    "homepage": "https://www.drupal.org/user/98079"
+                },
+                {
+                    "name": "andyg5000",
+                    "homepage": "https://www.drupal.org/user/808668"
+                },
+                {
+                    "name": "chriscalip",
+                    "homepage": "https://www.drupal.org/user/210499"
+                },
+                {
+                    "name": "fakingfantastic",
+                    "homepage": "https://www.drupal.org/user/834502"
+                },
+                {
+                    "name": "joelpittet",
+                    "homepage": "https://www.drupal.org/user/160302"
+                },
+                {
+                    "name": "mheinke",
+                    "homepage": "https://www.drupal.org/user/615306"
+                },
+                {
+                    "name": "rszrama",
+                    "homepage": "https://www.drupal.org/user/49344"
+                },
+                {
+                    "name": "ultimike",
+                    "homepage": "https://www.drupal.org/user/51132"
+                }
+            ],
+            "description": "UPS Shipping Module for Drupal 8",
+            "homepage": "https://www.drupal.org/project/commerce_ups",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/commerce_ups",
+                "issues": "https://www.drupal.org/project/issues/commerce_ups"
+            },
+            "time": "2018-01-03 17:00:17"
+        },
+        {
             "name": "drupal/commerce_variation_cart_form",
             "version": "1.0.0",
             "source": {
@@ -2643,7 +2719,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/dc_ajax_add_cart",
-                "reference": "13745c96a7b81fa72c70dbeeb45adcca9ab369a4"
+                "reference": "d8a703e6d735a1d3c49c6deaaf8fd1dfad36f584"
             },
             "require": {
                 "drupal/commerce": "~2.0",
@@ -2661,8 +2737,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4+21-dev",
-                    "datestamp": "1515566285",
+                    "version": "8.x-1.0-alpha6+5-dev",
+                    "datestamp": "1519912684",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2687,7 +2763,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/dc_ajax_add_cart"
             },
-            "time": "2018-01-17 06:52:07"
+            "time": "2018-03-01 14:06:10"
         },
         {
             "name": "drupal/embed",
@@ -4758,6 +4834,83 @@
                 "orm"
             ],
             "time": "2017-03-07 22:26:54"
+        },
+        {
+            "name": "gabrielbull/ups-api",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gabrielbull/php-ups-api.git",
+                "reference": "cb633b84d5437683e286c7df34dc8e4ae254a297"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gabrielbull/php-ups-api/zipball/cb633b84d5437683e286c7df34dc8e4ae254a297",
+                "reference": "cb633b84d5437683e286c7df34dc8e4ae254a297",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.0",
+                "php": "^5.5 || ^7.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8 || ^5.0"
+            },
+            "suggest": {
+                "ext-soap": "Required if you need the Tradeability API of UPS"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.5.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ups\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastien Vergnes",
+                    "email": "sebastien@vergnes.eu"
+                },
+                {
+                    "name": "Michael Williams",
+                    "email": "michael.williams@limelyte.com"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com"
+                },
+                {
+                    "name": "Stefan Doorn",
+                    "email": "stefan@efectos.nl"
+                },
+                {
+                    "name": "Eduard Sukharev",
+                    "email": "sukharev.eh@gmail.com"
+                }
+            ],
+            "description": "PHP UPS API",
+            "keywords": [
+                "Rate",
+                "Rating",
+                "api",
+                "quantum view",
+                "shipping",
+                "time in transit",
+                "tracking",
+                "tradeability",
+                "ups",
+                "wrapper"
+            ],
+            "time": "2017-11-11 10:51:51"
         },
         {
             "name": "gdsmith/easing",
@@ -9280,6 +9433,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/commerce_shipping": 20,
+        "drupal/commerce_ups": 20,
         "drupal/dc_ajax_add_cart": 20,
         "drupal/entity_embed": 20,
         "drupal/exclude_node_title": 20,
