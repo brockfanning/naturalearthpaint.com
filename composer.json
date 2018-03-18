@@ -45,6 +45,10 @@
                     "type": "zip"
                 }
             }
+        },
+        "commerce_usps": {
+            "type": "git",
+            "url": "https://github.com/mattwebdev/commerce_usps.git"
         }
     },
     "config": {
@@ -53,6 +57,7 @@
     },
     "require": {
         "ext-curl": "*",
+        "commerce_usps/commerce_usps": "dev-master",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
         "drupal-composer/drupal-scaffold": "^2.2",

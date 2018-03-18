@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9ff16a3e8f1f77edd9680abbf243f833",
-    "content-hash": "539c6fa9a603e9ea8f805238ee20d272",
+    "hash": "53594da3cf757dc1a8fbefb86126e2f6",
+    "content-hash": "077f26147121a7eaa786826bd7f8916c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -169,6 +169,32 @@
             ],
             "description": "Braintree PHP Client Library",
             "time": "2017-12-14 00:08:17"
+        },
+        {
+            "name": "commerce_usps/commerce_usps",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattwebdev/commerce_usps.git",
+                "reference": "bfd960744e3851e95a8b1e16f14b277115d3c9b5"
+            },
+            "require": {
+                "vinceg/usps-php-api": "~1.0"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "USPS Shipping Module for Drupal 8",
+            "homepage": "https://www.drupal.org/project/commerce_usps",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/commerce_usps",
+                "source": "http://cgit.drupalcode.org/commerce_usps"
+            },
+            "time": "2018-03-15 16:29:41"
         },
         {
             "name": "commerceguys/addressing",
@@ -7550,6 +7576,56 @@
             "time": "2017-09-27 18:06:46"
         },
         {
+            "name": "vinceg/usps-php-api",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/VinceG/USPS-php-api.git",
+                "reference": "48655be90a283e535a42de8feb63e8df7c6fd415"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/VinceG/USPS-php-api/zipball/48655be90a283e535a42de8feb63e8df7c6fd415",
+                "reference": "48655be90a283e535a42de8feb63e8df7c6fd415",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "USPS\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vincent Gabriel",
+                    "homepage": "http://vadimg.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Alexander Reiff",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Ryan Hayle",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP wrapper for USPS Web Tools API",
+            "keywords": [
+                "api",
+                "usps"
+            ],
+            "time": "2016-09-08 03:11:44"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v2.4.0",
             "source": {
@@ -9432,6 +9508,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "commerce_usps/commerce_usps": 20,
         "drupal/commerce_shipping": 20,
         "drupal/commerce_ups": 20,
         "drupal/dc_ajax_add_cart": 20,
