@@ -68,8 +68,8 @@
         "drupal/commerce_ups": "3.x-dev",
         "drupal/commerce_variation_cart_form": "^1.0",
         "drupal/console": "~1.0",
-        "drupal/core": "~8.4",
-        "drupal/dc_ajax_add_cart": "1.x-dev",
+        "drupal/core": "^8.5.1",
+        "drupal/dc_ajax_add_cart": "1.0.0-beta1",
         "drupal/entity_browser": "^1.4",
         "drupal/entity_embed": "1.x-dev",
         "drupal/exclude_node_title": "1.x-dev",
@@ -134,9 +134,6 @@
     },
     "extra": {
         "patches": {
-            "drupal/dc_ajax_add_cart": {
-                "popups": "https://www.drupal.org/files/issues/dc_ajax_add_cart-popup-2910744-12.patch"
-            },
             "drupal/uswds": {},
             "drupal/uswds_paragraphs": {
                 "multiple heroes": "https://www.drupal.org/files/issues/uswds_paragraphs-d8-multiple_heroes-2935023-2.patch",
