@@ -1,12 +1,9 @@
-uuid: 1d9b962d-0966-4414-bedf-b008d50f06c1
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: QCxQeKi6Joed6MGWIBdsYhCEgQGsu4kKTZGzxlbHJKs
 open: null
 close: null
 uid: null
@@ -39,6 +36,8 @@ settings:
   form_reset: false
   form_disable_autocomplete: false
   form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
   form_unsaved: false
   form_disable_back: false
   form_submit_back: false
@@ -52,6 +51,10 @@ settings:
   submission_login: false
   submission_login_message: ''
   submission_exception_message: ''
+  submission_locked_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
   wizard_progress_bar: true
   wizard_progress_pages: false
   wizard_progress_percentage: false
@@ -79,6 +82,8 @@ settings:
   confirmation_back: true
   confirmation_back_label: ''
   confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
   limit_total: null
   limit_total_interval: null
   limit_total_message: ''
@@ -94,7 +99,6 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
-  submission_locked_message: ''
 access:
   create:
     roles:
@@ -131,6 +135,10 @@ access:
     users: {  }
     permissions: {  }
   administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
     roles: {  }
     users: {  }
     permissions: {  }
@@ -199,3 +207,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: 1d9b962d-0966-4414-bedf-b008d50f06c1
+_core:
+  default_config_hash: QCxQeKi6Joed6MGWIBdsYhCEgQGsu4kKTZGzxlbHJKs

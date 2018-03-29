@@ -21,6 +21,8 @@ module:
   commerce_shipping: 0
   commerce_store: 0
   commerce_tax: 0
+  commerce_ups: 0
+  commerce_usps: 0
   config: 0
   contextual: 0
   ctools: 0
