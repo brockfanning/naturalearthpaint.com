@@ -69,7 +69,7 @@
         "drupal/commerce_variation_cart_form": "^1.0",
         "drupal/console": "~1.0",
         "drupal/contribute": "^1.0.0-beta7",
-        "drupal/core": "^8.5.1",
+        "drupal/core": "^8.5.3",
         "drupal/dc_ajax_add_cart": "1.0.0-beta1",
         "drupal/entity_browser": "^1.4",
         "drupal/entity_embed": "1.x-dev",
